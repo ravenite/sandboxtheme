@@ -1373,7 +1373,8 @@ footer.theme-footer ul.system-links {
 
 footer.theme-footer ul.system-links li {margin:0 10px;}
 
-footer.theme-footer ul.system-links li a {
+footer.theme-footer ul.system-links li a,
+footer.theme-footer ul.system-links li span {
   color:#fff;
   font-size:.875em;
   line-height:1em;
