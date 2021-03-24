@@ -469,19 +469,21 @@ article .at.ngp-form .form-item-selectedfrequency .radios label input[type="radi
 }
 
 article .at.ngp-form .form-item-selectedfrequency .radio-description {
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: 44px 30px;
+  color: #0000EE;
+  display: block;
+  font-family: Kalam, script;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  padding: 20px 0 10px 60px;
+  width: 100%;
+}
+article .at.ngp-form .form-item-selectedfrequency .radio-description-value-0 {
   background-image:url(https://raw.githubusercontent.com/ravenite/sandboxtheme/01f71c03db45636d285c051b63f8c08610383a38/curved-up-arrow.svg);
-  background-repeat:no-repeat;
-  background-position:50% 0;
-  background-size:11px 26px;
-  color:#0000EE;
-  display:block;
-  font-family:Kalam, script;
-  font-size:.9375em;
-  font-weight:400;
-  line-height:20px;
-  margin:0;
-  padding:30px 0 10px;
-  width:100%;
 }
 
 
@@ -1521,7 +1523,6 @@ footer.theme-footer p,
     background:#fff;
     box-shadow:0 2px 4px 0 rgba(0,0,0,.5);
     padding:0 0 20px;
-    width:450px;
   }
   
   body.no-main-image main article section.article-content {width:100%;}
