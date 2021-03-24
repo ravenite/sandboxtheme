@@ -1220,14 +1220,12 @@ article .at.ngp-form label small.error {
 
 
 /* CTA */
-
 .cta-section.row {
-  display: flex;
-  max-width: 1170px;
   margin: 0 auto;
   padding:63px 0;
 }
 .cta-item {
+  margin: 0 auto 25px auto;
   text-align: center;
 }
 .cta-item i[class*="fa"] {
@@ -1615,15 +1613,19 @@ footer.theme-footer p,
     flex:1 175px;
     min-width:175px;
   }
-
-
+  /* CTA */
+  .cta-section.row {
+    display: flex;
+    max-width: 960px;
+  }
   
 }
 
-/*
 @media (min-width:1200px) {
-
-  header.theme-header section.logo-container {width:1200px;}
-  
+  /* header */
+  header.theme-header section.logo-container {}
+  /* CTA */
+  .cta-section.row {
+    max-width: 1170px;
+  }  
 }
-*/
