@@ -1400,7 +1400,7 @@ footer.theme-footer p,
   }
 
   article .at.ngp-form .form-item-selectedfrequency .radios label {width:calc(50% - 5px);}
-  article .at.ngp-form .form-item-selectedfrequency .radio-description {background-position:75% 0;}
+  article .at.ngp-form .form-item-selectedfrequency .radio-description {background-position:0;}
 
   
   /* Form Control Buttons */
