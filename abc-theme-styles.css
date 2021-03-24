@@ -151,7 +151,7 @@ article .at.ngp-form header.HeaderHtml .image-and-text-container.image-right.two
 
 article .at.ngp-form header.HeaderHtml {
   /***padding:20px 0;***/
-  margin:0 20px;
+  margin:0;
 }
 
 article .at.ngp-form header.HeaderHtml h2 {
@@ -1497,7 +1497,7 @@ footer.theme-footer p,
     background-size:cover;
   }
       
-  header.theme-header section.logo-container {width:740px;}
+  header.theme-header section.logo-container {width:647px;}
   
   figure.branding figcaption {
     font-size:1.9em;
@@ -1583,7 +1583,7 @@ footer.theme-footer p,
 
 @media (min-width:960px) {
 
-  header.theme-header section.logo-container {width:960px;}
+  header.theme-header section.logo-container {}
   header.theme-header figure.branding a {padding:23px 20px 28px 9px;}
   
   header.theme-header figure.branding img {
@@ -1599,7 +1599,7 @@ footer.theme-footer p,
     /**width:500px;***/
   }
   
-  article .at.ngp-form header.HeaderHtml {padding:30px 10px 20px;}
+  article .at.ngp-form header.HeaderHtml {padding:50px 40px 20px;}
   article .at.ngp-form form {padding:0 10px;}
 
   article .at.ngp-form ol.at-steps li.at-step a,
