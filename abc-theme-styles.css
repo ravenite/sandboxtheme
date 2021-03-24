@@ -1590,7 +1590,7 @@ footer.theme-footer p,
     width:188px;
   }
 
-  main article {width:1080px;}
+  main article {width:760px;}
   body.no-main-image main article {max-width:800px;}
   
   main article section.article-content {
@@ -1598,7 +1598,7 @@ footer.theme-footer p,
     width:500px;
   }
   
-  article .at.ngp-form header.HeaderHtml {padding:30px 10px 20px;margin: 0;width: 40%;}
+  article .at.ngp-form header.HeaderHtml {padding:30px 10px 20px;}
   article .at.ngp-form form {padding:0 10px;}
 
   article .at.ngp-form ol.at-steps li.at-step a,
