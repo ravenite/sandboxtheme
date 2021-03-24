@@ -772,7 +772,7 @@ article .at.ngp-form fieldset.ContributionInformation label.label-amount a:hover
 article .at.ngp-form fieldset.ContributionInformation label.label-amount:hover a {
   background:#a9a9a9;
   border:0;
-  border-radius:5px;
+  border-radius:0;
   height:44px;
 }
 
