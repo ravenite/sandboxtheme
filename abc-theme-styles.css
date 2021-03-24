@@ -66,7 +66,8 @@ figure.branding figcaption {
   color:#002868;
   font-size:1.375em;
   line-height: 1.15em;
-  padding:0 20px 20px;
+  padding:0 0 20px;
+  text-align: center;
 }
 
 main article section.article-content {
@@ -1471,7 +1472,6 @@ footer.theme-footer p,
 
   figure.branding figcaption {
     font-size:1.75em;
-    padding:0 20px 17px 0;
   }
   
   article .at.ngp-form header.HeaderHtml h1.large,
