@@ -63,10 +63,9 @@ figure.branding img {
 }
 
 figure.branding figcaption {
-  color:#4e5b31;
+  color:#002868;
   font-size:1.375em;
-  font-weight:700;
-  line-height:1em;
+  line-height: 1.15em;
   padding:0 20px 20px;
 }
 
@@ -742,6 +741,7 @@ article .at.ngp-form fieldset.ContributionInformation .at-radios {
 
 article .at.ngp-form fieldset.ContributionInformation label.label-amount {
   border-radius:5px;
+  color: white;
   float:none;
   font-size:1em;
   font-weight:400;
@@ -770,7 +770,7 @@ article .at.ngp-form fieldset.ContributionInformation label.label-amount input[n
 article .at.ngp-form fieldset.ContributionInformation label.label-amount a,
 article .at.ngp-form fieldset.ContributionInformation label.label-amount a:hover,
 article .at.ngp-form fieldset.ContributionInformation label.label-amount:hover a {
-  background:#d9d9d9;
+  background:#a9a9a9;
   border:0;
   border-radius:5px;
   height:44px;
@@ -1477,7 +1477,7 @@ footer.theme-footer p,
   header.theme-header section.logo-container {width:740px;}
   
   figure.branding figcaption {
-    font-size:2.5em;
+    font-size:1.9em;
     padding-bottom:16px;
   }
  
