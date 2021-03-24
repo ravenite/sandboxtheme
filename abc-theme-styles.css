@@ -991,7 +991,7 @@ article section.article-content > .validation-logos {display:none;}
 
 .validation-logos {
   display:flex;
-  justify-content:flex-start;
+  justify-content:center;
 }
 
 article .validation-logos {margin:0 -10px 10px;}
@@ -1255,7 +1255,6 @@ footer.theme-footer {
 }
 
 footer.theme-footer .footer-container {
-  display:flex;
   margin:0 auto;
   max-width:940px;
   padding:0;
@@ -1263,7 +1262,6 @@ footer.theme-footer .footer-container {
 }
 
 footer.theme-footer .footer-container.upper {
-  justify-content:space-between;
   padding:10px 0 20px;
 }
 
@@ -1300,7 +1298,7 @@ footer.theme-footer p.share-icons span a {
 
 footer.theme-footer p.share-icons span a::before {font-family:"Font Awesome 5 Brands";}
 
-footer.theme-footer .validation-logos {padding-left:10px;}
+footer.theme-footer .validation-logos {}
 footer.theme-footer .validation-logos figure.validation-logo img {}
 
 footer.theme-footer p {
@@ -1318,6 +1316,7 @@ footer.theme-footer p strong {
 }
 
 footer.theme-footer .secondary-content {
+  margin: 0 auto;
   padding:50px 20px 0 0;
   width:calc(100% - 200px);
 }
