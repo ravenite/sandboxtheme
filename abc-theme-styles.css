@@ -1268,11 +1268,12 @@ footer.theme-footer .footer-container.upper {
 footer.theme-footer .primary-content {}
 
 footer.theme-footer p.share-icons {
-  display:flex;
-  justify-content:space-between;
-  padding:0 6px 10px 20px;
-  margin:0;
-  width:100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20px;
+  margin: 20px auto;
+  max-width: 300px;
+  width: 100%;
 }
 
 footer.theme-footer p.share-icons span {
@@ -1302,9 +1303,9 @@ footer.theme-footer .validation-logos {}
 footer.theme-footer .validation-logos figure.validation-logo img {}
 
 footer.theme-footer p {
-  font-size:.75em;
+  font-size:.8em;
   line-height:1.5em;
-  margin:0 auto 20px;
+  margin:0 auto 5px;
   text-align:center;
 }
 
