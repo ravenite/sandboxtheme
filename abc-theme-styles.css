@@ -1595,7 +1595,7 @@ footer.theme-footer p,
   
   main article section.article-content {
     padding:0 0 30px;
-    width:500px;
+    /**width:500px;***/
   }
   
   article .at.ngp-form header.HeaderHtml {padding:30px 10px 20px;}
