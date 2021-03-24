@@ -26,8 +26,8 @@ main {
   width:100%;
 }
 
-.feeding-america-green {color:#4e5b31;}
-.feeding-america-gold {color:#de7c00;}
+.green {color:#4e5b31;}
+.gold {color:#de7c00;}
 
 
 /* Theme Header */
@@ -128,7 +128,7 @@ article .at.ngp-form .content.thankYou h1 {
   text-align:left;
 }
 
-article .at.ngp-form header.HeaderHtml h1.feeding-america-green {color:#4e5b31;}
+article .at.ngp-form header.HeaderHtml h1.alt {color:#4e5b31;}
 
 article .at.ngp-form header.HeaderHtml .image-and-text-container {
   align-items:flex-start;
@@ -168,7 +168,7 @@ article .at.ngp-form header.HeaderHtml p {
   padding:0;
 }
 
-article .at.ngp-form header.HeaderHtml .feeding-america-gold {color:#de7c00;}
+article .at.ngp-form header.HeaderHtml .gold {color:#de7c00;}
 article .at.ngp-form header.HeaderHtml p:last-child {margin:0;}
 
 article .at.ngp-form .content.thankYou {
@@ -421,7 +421,7 @@ article .at.ngp-form .at-row.Prefix.FirstName.LastName label.Prefix {
 article .at.ngp-form input::placeholder {opacity:.5;}
 
 body.contribution-theme .at-row.YesSignMeUpForUpdatesForBinder:after {
-  content:"You'll receive email updates from Feeding America. You can unsubscribe at any time.";
+  content:"You'll receive email updates from ABC Birds. You can unsubscribe at any time.";
   font-size:12px;
   line-height:16px;
   padding:0 10px 5px;
@@ -469,7 +469,7 @@ article .at.ngp-form .form-item-selectedfrequency .radios label input[type="radi
 }
 
 article .at.ngp-form .form-item-selectedfrequency .radio-description {
-  background-image:url(https://nvlupin.blob.core.windows.net/images/van/FAM/FAM/1/87270/images/themes/toggle-arrow.png);
+  background-image:url(https://raw.githubusercontent.com/ravenite/sandboxtheme/01f71c03db45636d285c051b63f8c08610383a38/curved-up-arrow.svg);
   background-repeat:no-repeat;
   background-position:50% 0;
   background-size:11px 26px;
@@ -516,7 +516,7 @@ article .at.ngp-form label.at-check .at-checkbox-title-container:after,
 article .at.ngp-form .UpdateMyProfile label > span:after,
 article .at.ngp-form label.at-check.authorize-payment-label > span:after {
   background-color:#fff;
-  background-image:url(https://nvlupin.blob.core.windows.net/images/van/FAM/FAM/1/87270/images/themes/check-mark.svg);
+  background-image:url(https://raw.githubusercontent.com/ravenite/sandboxtheme/feb2bedb5361bcb43779e247e8684e7444c3c456/check-mark.svg);
   background-position:center;
   background-repeat:no-repeat;
   background-size:12px 12px;
