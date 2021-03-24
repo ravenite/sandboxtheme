@@ -55,7 +55,11 @@ figure.branding {
   width:100%;
 }
 
-figure.branding a {padding:20px;}
+figure.branding a {
+  display: block;
+  margin: 0 auto;
+  padding:25px;
+}
 
 figure.branding img {
   height:67px;
@@ -1465,10 +1469,7 @@ footer.theme-footer p,
     justify-content:space-between;
   }
   
-  header.theme-header figure.branding img {
-    height:101px;
-    width:200px;
-  }
+  header.theme-header figure.branding img {}
 
   figure.branding figcaption {
     font-size:1.75em;
@@ -1589,10 +1590,7 @@ footer.theme-footer p,
   header.theme-header section.logo-container {}
   header.theme-header figure.branding a {padding:23px 20px 28px 9px;}
   
-  header.theme-header figure.branding img {
-    height:96.35px;
-    width:188px;
-  }
+  header.theme-header figure.branding img {  }
 
   main article {width:760px;}
   body.no-main-image main article {max-width:800px;}
