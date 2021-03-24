@@ -1265,7 +1265,7 @@ footer.theme-footer .footer-container.upper {
   padding:10px 0 20px;
 }
 
-footer.theme-footer .primary-content {width:180px;}
+footer.theme-footer .primary-content {}
 
 footer.theme-footer p.share-icons {
   display:flex;
