@@ -152,6 +152,7 @@ article .at.ngp-form header.HeaderHtml .image-and-text-container.image-right.two
 article .at.ngp-form header.HeaderHtml {
   /***padding:20px 0;***/
   margin:0;
+  width: 100%;
 }
 
 article .at.ngp-form header.HeaderHtml h2 {
@@ -169,6 +170,11 @@ article .at.ngp-form header.HeaderHtml p {
 
 article .at.ngp-form header.HeaderHtml .gold {color:#de7c00;}
 article .at.ngp-form header.HeaderHtml p:last-child {margin:0;}
+
+
+article .at.ngp-form form {
+  width:100%;
+}
 
 article .at.ngp-form .content.thankYou {
   margin:0 auto;
