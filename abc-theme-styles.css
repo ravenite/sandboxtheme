@@ -150,7 +150,7 @@ article .at.ngp-form header.HeaderHtml .image-and-text-container.image-right.two
 }
 
 article .at.ngp-form header.HeaderHtml {
-  padding:20px 0;
+  /***padding:20px 0;***/
   margin:0 20px;
 }
 
@@ -440,7 +440,7 @@ article .at.ngp-form .form-item-selectedfrequency .radios label {
   align-items:center;
   background:#a9a9a9;
   border:0;
-  border-radius:5px;
+  border-radius:0;
   color:white;
   display:flex;
   font-size:.875em;
@@ -740,7 +740,7 @@ article .at.ngp-form fieldset.ContributionInformation .at-radios {
 }
 
 article .at.ngp-form fieldset.ContributionInformation label.label-amount {
-  border-radius:5px;
+  border-radius:0;
   color: white;
   float:none;
   font-size:1em;
@@ -1535,12 +1535,13 @@ footer.theme-footer p,
   article .at.ngp-form ol.at-steps li.at-step a:before,
   article .at.ngp-form ol.at-steps li.at-step b:before {margin:0 0 5px;}
 
+  /****
   article .at.ngp-form.multistep-layout header.HeaderHtml,
   article .at.ngp-form.multistep-layout form {
     float:none;
     width:unset;
   }
-      
+  ***/
   article .at.ngp-form fieldset.ContributionInformation label.label-amount {width:calc(50% - 10px) !important;}
   article .at.ngp-form .at-form-submit .step-prevNext {justify-content:space-between;}
   article .at.ngp-form .at-form-submit {justify-content:flex-end;}
