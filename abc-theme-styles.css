@@ -1219,6 +1219,31 @@ article .at.ngp-form label small.error {
 }
 
 
+/* CTA */
+
+.cta-section.row {
+  display: flex;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding:63px 0;
+}
+.cta-item {
+  text-align: center;
+}
+.cta-item i[class*="fa"] {
+  display: block;
+  font-size: 60px;
+  color: #002868;
+  margin: 0 auto 35px auto;
+  width: 60px;
+}
+.cta-item a {
+  color: #DC6B2F;
+  text-decoration:none;
+}
+
+
+
 /* Footer */
 
 footer.theme-footer {
