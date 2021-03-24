@@ -438,7 +438,6 @@ article .at.ngp-form .form-item-selectedfrequency .radios {
 
 article .at.ngp-form .form-item-selectedfrequency .radios label {
   align-items:center;
-  background:#a9a9a9;
   border:0;
   border-radius:0;
   color:white;
@@ -461,13 +460,13 @@ article .at.ngp-form .form-item-selectedfrequency .radios label.selected {
   color:#de7c00;
   font-weight:700;
 }
-
+/***
 article .at.ngp-form .form-item-selectedfrequency .radios label input[type="radio"] {
   display:none;
   -moz-appearance:none;
   -webkit-appearance:none;
 }
-
+***/
 article .at.ngp-form .form-item-selectedfrequency .radio-description {
   background-repeat: no-repeat;
   background-position: 0;
