@@ -85,7 +85,7 @@ main article section.article-content {
 
 article .at.ngp-form .FastAction {
   margin:0;
-  padding:0;
+  padding: 0 20px;
 }
 
 article .at.ngp-form .FastAction .fastAction {
@@ -1602,11 +1602,11 @@ footer.theme-footer p,
   body.no-main-image main article {max-width:800px;}
   
   main article section.article-content {
-    padding:0 0 30px;
+    padding:25px 0 30px;
     /**width:500px;***/
   }
   
-  article .at.ngp-form header.HeaderHtml {padding:20px;}
+  article .at.ngp-form header.HeaderHtml {padding:20px 30px;}
   article .at.ngp-form form {padding:0 10px;}
 
   article .at.ngp-form ol.at-steps li.at-step a,
