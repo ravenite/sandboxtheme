@@ -1405,10 +1405,10 @@ footer.theme-footer p,
 
   article .at.ngp-form .form-item-selectedfrequency .radios {
     flex-direction:row;
-    justify-content:space-between;
+    /***justify-content:space-between;***/
   }
 
-  article .at.ngp-form .form-item-selectedfrequency .radios label {width:calc(50% - 5px);}
+  article .at.ngp-form .form-item-selectedfrequency .radios label {min-width: 125px;max-width:calc(50% - 5px);}
   article .at.ngp-form .form-item-selectedfrequency .radio-description {background-position:0;}
 
   
