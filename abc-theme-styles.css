@@ -40,7 +40,7 @@ main header.theme-header {
 
 header.theme-header .logo-container {
   margin:0 auto;
-  padding:0;
+  padding: 0 20px;
   width:100%;
 }
 
@@ -118,7 +118,7 @@ article .at.ngp-form {
 article .at.ngp-form.multistep-layout {min-width:unset;}
 
 main section.at-inner {background:none;}
-article .at.ngp-form .at-form * {color:#222;}
+article .at.ngp-form .at-form * {color:#473E36;}
 article .at.ngp-form header.at-title {display:none;}
 
 article .at.ngp-form header.HeaderHtml h1,
@@ -302,7 +302,7 @@ article .at.ngp-form ol.at-steps li.at-step b {
 
 article .at.ngp-form ol.at-steps li.at-step a:before,
 article .at.ngp-form ol.at-steps li.at-step b:before {
-  background:#666;
+  background:#a9a9a9;
   border:0;
   display:flex;
   font-size:16px;
@@ -1424,7 +1424,12 @@ footer.theme-footer p,
   /* Form */
 
   article .at.ngp-form header.at-title,
-  article .at.ngp-form .content.thankYou h1 {font-size:2em;}
+  article .at.ngp-form .content.thankYou h1 {
+    font-size:1.9em;
+    line-height: 1.23;
+    padding: 20px 0 5px 40px;
+    text-align: left;
+  }
   
   article .at.ngp-form ol.at-steps li.at-step a,
   article .at.ngp-form ol.at-steps li.at-step b {flex-direction:row;}
