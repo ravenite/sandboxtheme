@@ -1250,7 +1250,7 @@ footer.theme-footer {
   background:#544C44;
   color:#fff;
   margin:0;
-  padding:0;
+  padding:30px 0 0 0;
   width:100%;
 }
 
@@ -1277,8 +1277,6 @@ footer.theme-footer p.share-icons {
 }
 
 footer.theme-footer p.share-icons span {
-  border:5px solid #fff;
-  border-radius:10px 0 10px 0;
   display:block;
 }
 
