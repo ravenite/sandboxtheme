@@ -76,7 +76,7 @@ figure.branding figcaption {
 
 main article section.article-content {
   background:#fff;
-  padding:0 0 40px;
+  padding: 0 0 5px 30px;
   width:100%;
 }
 
@@ -1427,8 +1427,9 @@ footer.theme-footer p,
   article .at.ngp-form .content.thankYou h1 {
     font-size:1.9em;
     line-height: 1.23;
-    padding: 20px 0 5px 40px;
-    text-align: left;
+  }
+  article .at.ngp-form .content.thankYou h1 {
+    padding: 23px;
   }
   
   article .at.ngp-form ol.at-steps li.at-step a,
@@ -1531,7 +1532,6 @@ footer.theme-footer p,
   main article section.article-content {
     background:#fff;
     box-shadow:0 2px 4px 0 rgba(0,0,0,.5);
-    padding:0 0 20px;
   }
   
   body.no-main-image main article section.article-content {width:100%;}
@@ -1605,7 +1605,7 @@ footer.theme-footer p,
     /**width:500px;***/
   }
   
-  article .at.ngp-form header.HeaderHtml {padding:50px 30px 20px;}
+  article .at.ngp-form header.HeaderHtml {padding:20px;}
   article .at.ngp-form form {padding:0 10px;}
 
   article .at.ngp-form ol.at-steps li.at-step a,
