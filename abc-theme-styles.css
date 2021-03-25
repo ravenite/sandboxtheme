@@ -56,7 +56,7 @@ figure.branding {
 figure.branding a {
   display: block;
   margin: 0 auto;
-  padding:25px;
+  padding:30px;
 }
 
 figure.branding img {
@@ -1608,7 +1608,7 @@ footer.theme-footer p {
 @media (min-width:960px) {
 
   header.theme-header section.logo-container {}
-  header.theme-header figure.branding a {padding:23px 20px 28px 9px;}
+  header.theme-header figure.branding a {padding:40px 20px 35px 9px;}
   
   header.theme-header figure.branding img {  }
 
