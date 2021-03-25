@@ -115,7 +115,7 @@ article .at.ngp-form {
 
 article .at.ngp-form.multistep-layout {min-width:unset;}
 
-main section.at-inner {background:none;}
+main section.at-inner {background:none;padding: 10px;}
 article .at.ngp-form .at-form * {color:#473E36;}
 article .at.ngp-form header.at-title {padding:10px 30px 0 30px;text-align: left;}
 
