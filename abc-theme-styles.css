@@ -477,7 +477,7 @@ article .at.ngp-form .form-item-selectedfrequency .radios label input[type="radi
 ***/
 article .at.ngp-form .form-item-selectedfrequency .radio-description {
   background-repeat: no-repeat;
-  background-position: 0;
+  background-position: -8px 2px;
   background-size: 44px 30px;
   color: #0000EE;
   display: block;
@@ -486,7 +486,7 @@ article .at.ngp-form .form-item-selectedfrequency .radio-description {
   font-weight: 400;
   line-height: 20px;
   margin: 0;
-  padding: 20px 0 10px 60px;
+  padding: 20px 0 10px 35px;
   width: 100%;
 }
 article .at.ngp-form .form-item-selectedfrequency .radio-description-value-0 {
@@ -1415,7 +1415,7 @@ footer.theme-footer p {
   }
 
   article .at.ngp-form .form-item-selectedfrequency .radios label {min-width: 125px;max-width:calc(50% - 5px);}
-  article .at.ngp-form .form-item-selectedfrequency .radio-description {background-position:0;}
+  article .at.ngp-form .form-item-selectedfrequency .radio-description {background-position:-7px 2px;}
 
   
   /* Form Control Buttons */
