@@ -1516,7 +1516,7 @@ footer.theme-footer p {
     background-repeat:no-repeat;
   }
       
-  header.theme-header section.logo-container {width:647px;}
+  header.theme-header section.logo-container {padding: 0;width:647px;}
   
   figure.branding figcaption {
     font-size:1.9em;
