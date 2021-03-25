@@ -1586,15 +1586,15 @@ footer.theme-footer p {
   article .at.ngp-form .at-form-submit {justify-content:center;}
 
   /* two columns */ 
-  body.image-theme-header.columns-two .at.ngp-form section.at-inner {
+  body.columns-two .at.ngp-form section.at-inner {
     display: grid;
     grid-template-columns: 300px 380px;
     padding-top: 10px;
   }
-  body.image-theme-header.columns-two .at.ngp-form figure.main-image, 
-  body.image-theme-header.columns-two .at.ngp-form header.at-title, 
-  body.image-theme-header.columns-two .at.ngp-form header.at-markup, 
-  body.image-theme-header.columns-two .at.ngp-form header.MeterHtml {
+  body.columns-two .at.ngp-form figure.main-image, 
+  body.columns-two .at.ngp-form header.at-title, 
+  body.columns-two .at.ngp-form header.at-markup, 
+  body.columns-two .at.ngp-form header.MeterHtml {
     grid-column: 1 / 2;
     padding-right: 10px;
   }
@@ -1602,14 +1602,14 @@ footer.theme-footer p {
     display: block;
     margin: 0 20px 20px;
   }
-  body.image-theme-header.columns-two .at.ngp-form header.at-title {
+  body.columns-two .at.ngp-form header.at-title {
     grid-row: 2 / 3;
     margin: 0 0 20px 20px;
   }
-  body.image-theme-header.columns-two .at.ngp-form header.MeterHtml {
+  body.columns-two .at.ngp-form header.MeterHtml {
     grid-row: 3 / 4;
   }
-  body.image-theme-header.columns-two .at.ngp-form header.HeaderHtml {
+  body.columns-two .at.ngp-form header.HeaderHtml {
     grid-row: 4 / 5;
     padding-bottom: 0;
   }
@@ -1704,14 +1704,14 @@ footer.theme-footer p {
   .cta-section.row {
     max-width: 1170px;
   } 
-  body.image-theme-header.columns-two .at.ngp-form section.at-inner {
+  body.columns-two .at.ngp-form section.at-inner {
     grid-template-columns: 500px 560px;
     padding-top: 20px;
   }
-  body.image-theme-header.columns-two .at.ngp-form figure.main-image,
-  body.image-theme-header.columns-two .at.ngp-form header.at-markup,
-  body.image-theme-header.columns-two .at.ngp-form header.MeterHtml,
-  body.image-theme-header.columns-two .at.ngp-form header.HeaderHtml {
+  body.columns-two .at.ngp-form figure.main-image,
+  body.columns-two .at.ngp-form header.at-markup,
+  body.columns-two .at.ngp-form header.MeterHtml,
+  body.columns-two .at.ngp-form header.HeaderHtml {
     padding-right: 20px;
   }
 }
