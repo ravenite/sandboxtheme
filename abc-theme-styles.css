@@ -1664,13 +1664,18 @@ footer.theme-footer p {
 @media (min-width:960px) {
 
   header.theme-header section.logo-container {}
-  header.theme-header figure.branding a {padding:40px 20px 35px 9px;}
+  header.theme-header figure.branding a {}
   
   header.theme-header figure.branding img {  }
 
   main article {width:760px;}
-  body.no-main-image main article {max-width:800px;}
+  body.no-main-image main article {}
   
+  body.columns-two main article {
+    width:1080px;
+  }
+  body.no-main-image main article {}
+    
   main article section.article-content {
     padding:25px 0 30px;
     /**width:500px;***/
