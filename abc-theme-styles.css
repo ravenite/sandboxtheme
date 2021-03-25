@@ -347,7 +347,7 @@ article .at.ngp-form fieldset.ContributionInformation legend.at-legend {padding-
 
 article .at.ngp-form .at-row label,
 article .at.ngp-form fieldset.TicketInformation label {
-  font-size:14px;
+  font-size:18px;
   font-weight:400;
   line-height:20px;
   margin:0 10px;
@@ -613,15 +613,19 @@ article .at.ngp-form .at-recurring label select,
 article .at.ngp-form .at-recurring label input {
   border:1px solid #999;
   border-radius:0;
-  color:#181b18;
-  font-size:16px;
-  font-weight:600;
   height:34px;
   line-height:22px;
   margin:0 5px 0 0;
   padding:0 20px 0 5px;
 }
-
+/***
+article .at.ngp-form .at-recurring label select,
+article .at.ngp-form .at-recurring label input {
+  color:#181b18;
+  font-size:16px;
+  font-weight:600;
+}
+***/
 article .at.ngp-form fieldset.ContributionInformation .at-recurring .at-check {
    display:block;
    margin-right:0;
