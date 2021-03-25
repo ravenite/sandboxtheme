@@ -1598,7 +1598,7 @@ footer.theme-footer p {
   body.columns-two .at.ngp-form header.MeterHtml {
     padding-right: 10px;
   }
-  body.image-theme-header article .at.ngp-form figure.main-image {
+  body.columns-two article .at.ngp-form figure.main-image {
     display: block;
     grid-column: 1 / 2;
     margin: 0 0 20px;
