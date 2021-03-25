@@ -119,7 +119,7 @@ article .at.ngp-form.multistep-layout {min-width:unset;}
 
 main section.at-inner {background:none;padding: 10px;}
 article .at.ngp-form .at-form * {color:#473E36;}
-article .at.ngp-form header.at-title {padding: 10px 18px 0 18px;text-align: left;}
+article .at.ngp-form header.at-title {padding: 10px 23px 0 23px;text-align: left;}
 
 article .at.ngp-form header.HeaderHtml h1,
 article .at.ngp-form .content.thankYou h1 {
@@ -1436,7 +1436,7 @@ footer.theme-footer p {
     line-height: 1.23;
   }
   article .at.ngp-form header.at-title {
-    padding: 10px 28px 0 28px;
+    padding: 10px 23px 0 23px;
   }
   article .at.ngp-form .content.thankYou h1 {
     padding: 23px;
@@ -1619,8 +1619,10 @@ footer.theme-footer p {
     padding:25px 0 30px;
     /**width:500px;***/
   }
-  
-  article .at.ngp-form header.HeaderHtml {padding:20px 30px 0 30px;}
+    article .at.ngp-form header.at-title {
+    padding: 10px 28px 0 28px;
+  }
+
   article .at.ngp-form form {padding:0 10px;}
 
   article .at.ngp-form ol.at-steps li.at-step a,
