@@ -26,7 +26,7 @@ main {
 }
 
 .green {color:#4e5b31;}
-.gold {color:#de7c00;}
+.gold {color:#DC6B2F;}
 
 
 /* Theme Header */
@@ -94,7 +94,7 @@ article .at.ngp-form .FastAction .fastAction {
 }
 
 article .at.ngp-form .FastAction p a {
-  color:#de7c00;
+  color:#DC6B2F;
   font-weight:700;
   text-decoration:none;
 }
@@ -123,7 +123,7 @@ article .at.ngp-form header.at-title {padding: 10px 23px 0 23px;text-align: left
 
 article .at.ngp-form header.HeaderHtml h1,
 article .at.ngp-form .content.thankYou h1 {
-  color:#de7c00;
+  color:#DC6B2F;
   font-size:1.5625em;
   line-height:1.28em;
   margin:0 0 10px;
@@ -173,7 +173,7 @@ article .at.ngp-form header.HeaderHtml p {
   padding:0;
 }
 
-article .at.ngp-form header.HeaderHtml .gold {color:#de7c00;}
+article .at.ngp-form header.HeaderHtml .gold {color:#DC6B2F;}
 article .at.ngp-form header.HeaderHtml p:last-child {margin:0;}
 
 
@@ -200,7 +200,7 @@ article .at.ngp-form .content.thankYou p {
 
 article .at.ngp-form header.HeaderHtml a,
 article .at.ngp-form .content.thankYou a {
-  color:#de7c00;
+  color:#DC6B2F;
   font-weight:700;
 }
 
@@ -285,7 +285,7 @@ article .at.ngp-form ol.at-steps li.at-step {
   padding:0;
 }
 
-article .at.ngp-form ol.at-steps li.at-step.active {border-bottom:2px solid #de7c00;}
+article .at.ngp-form ol.at-steps li.at-step.active {border-bottom:2px solid #DC6B2F;}
 
 article .at.ngp-form ol.at-steps li.at-step a,
 article .at.ngp-form ol.at-steps li.at-step b {
@@ -467,8 +467,8 @@ article .at.ngp-form .form-item-selectedfrequency .radios label {
 
 article .at.ngp-form .form-item-selectedfrequency .radios label.selected {
   background:#fff;
-  border:2px solid #de7c00;
-  color:#de7c00;
+  border:2px solid #DC6B2F;
+  color:#DC6B2F;
   font-weight:700;
 }
 /***
@@ -532,7 +532,7 @@ article .at.ngp-form label.at-check.authorize-payment-label > span:after {
   background-position:center;
   background-repeat:no-repeat;
   background-size:12px 12px;
-  border:2px solid #de7c00;
+  border:2px solid #DC6B2F;
   content:"";
   font-size:12px;
   line-height:12px;
@@ -668,8 +668,8 @@ article .at.ngp-form .radios label input[type="radio"] {
 }
 
 article .at.ngp-form .radios label input[type="radio"]:checked {
-  background-color:#de7c00;
-  border:1px solid #de7c00;
+  background-color:#DC6B2F;
+  border:1px solid #DC6B2F;
 }
 
 
@@ -791,8 +791,8 @@ article .at.ngp-form fieldset.ContributionInformation label.label-amount:hover a
 }
 
 article .at.ngp-form fieldset.ContributionInformation label.label-amount input:checked + a {
-    background: #de7c00;
-    border: 2px solid #de7c00;
+    background: #DC6B2F;
+    border: 2px solid #DC6B2F;
     color: white;
 }
 
@@ -853,7 +853,7 @@ article .at.ngp-form fieldset.ContributionInformation input.edit-otheramount::pl
 
 article .at.ngp-form fieldset.ContributionInformation input:checked + input.edit-otheramount {
   background:#fff;
-  border:2px solid #de7c00;
+  border:2px solid #DC6B2F;
   color:#3c3c3c;
   font-weight:400;
   padding:0 20px 0 20px;
@@ -903,6 +903,20 @@ article .at.ngp-form .form-item-inhonororinmemoryof > label {
   font-weight:700;
   margin:10px 0;
   width:100%;
+}
+
+
+.at-preview-ecard.btn-at.btn-at-link {
+    background: #DC6B2F;
+    border: 2px solid #DC6B2F;
+    border-radius: 0;
+  color: white !important;
+    font-size: 1.22em;
+    font-weight: 600;
+    height: 50px;
+    line-height: 1.35em;
+    text-shadow: unset;
+    padding: 10px 20px;
 }
 
 article .at.ngp-form fieldset .radios {
@@ -1020,7 +1034,7 @@ article .validation-logos {margin: 20px 0 30px;}
 .validation-logos figure.validation-logo img {height:79px;}
 
 article .at.ngp-form #calc-explainer {
-  color:#de7c00;
+  color:#DC6B2F;
   font-weight:700;
   margin:0 0 15px;
   padding:0 10px;
@@ -1103,7 +1117,7 @@ article.has-ecard .at.ngp-form .ecards-container .at-ecard {
 }
 
 article.has-ecard .at.ngp-form .ecards-container .at-ecard.selected {
-  border:5px solid #de7c00;
+  border:5px solid #DC6B2F;
   border-radius:5px;
 }
 
@@ -1125,7 +1139,7 @@ article.has-ecard .at.ngp-form .ecards-container .at-ecard input {
 }
 
 article.has-ecard .at.ngp-form .ecards-container .at-ecards button.at-preview-ecard {
-  background:#de7c00;
+  background:#DC6B2F;
   color:#fff;
   font-weight:700;
   height:44px;
@@ -1202,7 +1216,7 @@ article .at.ngp-form label small.error {
 }
 
 .lightbox-modal.at-modal .at-modal-inner header > div {
-  color:#de7c00;
+  color:#DC6B2F;
   font-size:24px;
   font-weight:700;
   line-height:36px;
@@ -1228,7 +1242,7 @@ article .at.ngp-form label small.error {
 }
 
 .lightbox-modal.at-modal footer a.lightbox-decline-button {
-  color:#de7c00;
+  color:#DC6B2F;
   font-weight:500;
 }
 
