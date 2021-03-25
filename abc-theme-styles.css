@@ -1527,10 +1527,11 @@ footer.theme-footer p {
 @media (min-width:768px) {
   
   main {
-    background-image: url(https://raw.githubusercontent.com/ravenite/sandboxtheme/master/sunset.jpg);
+    background-attachment:fixed;
     background-color:#d9d9d9;
     background-position:center top;
     background-repeat:no-repeat;
+    background-size:cover;
   }
       
   header.theme-header section.logo-container {padding: 0;width:647px;}
