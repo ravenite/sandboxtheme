@@ -1595,12 +1595,12 @@ footer.theme-footer p {
   body.columns-two .at.ngp-form header.at-title, 
   body.columns-two .at.ngp-form header.at-markup, 
   body.columns-two .at.ngp-form header.MeterHtml {
-    grid-column: 1 / 2;
     padding-right: 10px;
   }
   body.image-theme-header article .at.ngp-form figure.main-image {
     display: block;
-    margin: 0 20px 20px;
+    grid-column: 1 / 2;
+    margin: 0 0 20px;
   }
   body.columns-two .at.ngp-form header.at-title {
     grid-row: 2 / 3;
@@ -1613,6 +1613,11 @@ footer.theme-footer p {
     grid-row: 4 / 5;
     padding-bottom: 0;
   }
+  body.columns-two .at.ngp-form form {
+    grid-column: 2 / 3;
+    grid-row: 1 / 7;
+  }
+  
   /* CTA */ 
   .cta-section.row {
     display: flex;
