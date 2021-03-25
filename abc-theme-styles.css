@@ -752,11 +752,11 @@ article .at.ngp-form fieldset.ContributionInformation label.label-amount {
   border-radius:0;
   color: white;
   float:none;
-  font-size:1em;
-  font-weight:400;
-  height:44px;
-  letter-spacing:unset;
-  line-height:1.5em;
+  font-size: 1.22em;
+  font-weight: 600;
+  height: 50px;
+  letter-spacing: unset;
+  line-height: 1.35em;
   margin:9px;
   padding:10px 20px;
   text-shadow:unset;
