@@ -1308,7 +1308,7 @@ footer.theme-footer .validation-logos {}
 footer.theme-footer .validation-logos figure.validation-logo img {}
 
 footer.theme-footer p {
-  font-size:.8em;
+  font-size:.9em;
   line-height:1.5em;
   margin:0 auto 5px;
   text-align:center;
@@ -1366,7 +1366,7 @@ footer.theme-footer ul.system-links {
   justify-content:center;
   list-style:none;
   margin:0 0 20px;
-  padding:20px 0 0;
+  padding:10px 0 0;
 }
 
 footer.theme-footer ul.system-links li {margin:0 10px;}
