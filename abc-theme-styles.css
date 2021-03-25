@@ -117,13 +117,12 @@ article .at.ngp-form.multistep-layout {min-width:unset;}
 
 main section.at-inner {background:none;}
 article .at.ngp-form .at-form * {color:#473E36;}
-article .at.ngp-form header.at-title {display:none;padding: 20px 0 0 0;text-align: left;}
+article .at.ngp-form header.at-title {padding: 0 30px 10px 30px;text-align: left;}
 
 article .at.ngp-form header.HeaderHtml h1,
 article .at.ngp-form .content.thankYou h1 {
   color:#de7c00;
   font-size:1.5625em;
-  font-weight:700;
   line-height:1.28em;
   margin:0 0 10px;
   padding:0;
