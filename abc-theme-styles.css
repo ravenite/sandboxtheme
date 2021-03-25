@@ -117,7 +117,7 @@ article .at.ngp-form {
 
 article .at.ngp-form.multistep-layout {min-width:unset;}
 
-main section.at-inner {background:none;padding: 10px;}
+main section.at-inner {background:none;}
 article .at.ngp-form .at-form * {color:#473E36;}
 article .at.ngp-form header.at-title {padding: 10px 23px 0 23px;text-align: left;}
 
@@ -1542,6 +1542,8 @@ footer.theme-footer p {
     background:#fff;
     box-shadow:0 2px 4px 0 rgba(0,0,0,.5);
   }
+  main section.at-inner {padding: 10px;}
+  
   
   body.no-main-image main article section.article-content {width:100%;}
   
