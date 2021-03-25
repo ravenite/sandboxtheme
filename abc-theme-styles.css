@@ -1384,7 +1384,6 @@ footer.theme-footer ul.system-links li span {
 /* Fonts */
 
 article .at.ngp-form .at-form *,
-footer.theme-footer p,
 .lightbox-modal.at-modal * {
     font-family: 'HK Grotesk';
     src: url('HKGrotesk-Regular.woff2') format('woff2'),
@@ -1393,7 +1392,10 @@ footer.theme-footer p,
     font-style: normal;
     font-display: swap;
 }
-
+footer.theme-footer p {
+  font-family: 'HK Grotesk';
+  font-weight: 600;
+}
 
 
 
