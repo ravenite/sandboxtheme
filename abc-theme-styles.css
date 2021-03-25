@@ -338,7 +338,7 @@ article .at.ngp-form fieldset.PaymentInformation + fieldset.AdditionalInformatio
 article .at.ngp-form legend.at-legend {
   border-top:1px solid #d9d9d9;
   font-size:24px;
-  font-weight:700;
+  font-weight:400;
   line-height:24px;
   margin:0 10px;
   padding:20px 0 10px;
@@ -704,22 +704,20 @@ article .at.ngp-form legend.at-legend-with-submit input,
   align-items:center;
   background-color:#DC6B2F;
   border:0;
-  border-radius:5px;
+  border-radius:0;
   color:#fff;
   display:flex;
   float:none;
-  font-size:20px;
+  font-size:22px;
   font-weight:700;
   justify-content:center;
-  line-height:22px;
+  line-height:24px;
   margin:0 10px;
-  min-height:56px;
+  min-height:50px;
   order:2;
   padding:6px 30px;
   text-align:center;
-  text-transform:uppercase;
   white-space:normal;
-  width:100%;
 }
 
 article .at.ngp-form .at-form-submit .step-prevNext .btn-at {
@@ -1554,7 +1552,7 @@ footer.theme-footer p,
   ***/
   article .at.ngp-form fieldset.ContributionInformation label.label-amount {width:calc(50% - 10px) !important;}
   article .at.ngp-form .at-form-submit .step-prevNext {justify-content:space-between;}
-  article .at.ngp-form .at-form-submit {justify-content:flex-end;}
+  article .at.ngp-form .at-form-submit {justify-content:center;}
   
   /* CTA */ 
   .cta-section.row {
