@@ -233,9 +233,9 @@ article .at.ngp-form figure.progress-meter + figure.progress-meter {display:none
 
 article .at.ngp-form figure.progress-meter progress {
   appearance:none;
-  background:#aaa;
-  border:0;
-  border-radius:0;
+  background:#fff;
+  border:1px solid #A9A9A9;
+  border-radius:5px;
   display:block;
   height:30px;
   margin:0 0 10px;
@@ -252,8 +252,8 @@ article .at.ngp-form figure.progress-meter progress::-webkit-progress-bar {
   border:0;
 }
   
-article .at.ngp-form figure.progress-meter progress::-moz-progress-bar {background-color:#d81213;}
-article .at.ngp-form figure.progress-meter progress::-webkit-progress-value {background-color:#d81213;}
+article .at.ngp-form figure.progress-meter progress::-moz-progress-bar {background-color:#A9A9A9;}
+article .at.ngp-form figure.progress-meter progress::-webkit-progress-value {background-color:#A9A9A9;}
 
 article .at.ngp-form figure.progress-meter p.progress-meter-details {
   display:flex;
