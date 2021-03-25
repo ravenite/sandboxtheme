@@ -3,7 +3,6 @@
 /* Body */
 
 body {
-  background:#cccccc;
   background-repeat:no-repeat;
   color:#473E36;
   font-family: 'HK Grotesk';
@@ -1501,11 +1500,10 @@ footer.theme-footer p,
 @media (min-width:768px) {
   
   main {
+    background-image: url(https://raw.githubusercontent.com/ravenite/sandboxtheme/master/sunset.jpg);
     background-color:#d9d9d9;
-    background-attachment:fixed;
     background-position:center top;
     background-repeat:no-repeat;
-    background-size:cover;
   }
       
   header.theme-header section.logo-container {width:647px;}
