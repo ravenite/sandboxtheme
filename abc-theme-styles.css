@@ -1012,7 +1012,8 @@ article .at.ngp-form footer.FooterHtml {padding:10px 20px 0;}
 article .at.ngp-form.multistep-layout .at-form-submit footer.FooterHtml {padding:10px;}
 
 article .at.ngp-form footer.FooterHtml p {
-  font-size:.75em;
+  font-size: 1.3em;
+  line-height:20px;
   margin:0 0 15px;
 }
 
