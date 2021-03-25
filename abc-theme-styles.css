@@ -757,10 +757,10 @@ article .at.ngp-form fieldset.ContributionInformation label.label-amount {
   height:44px;
   letter-spacing:unset;
   line-height:1.5em;
-  margin:5px;
+  margin:9px;
   padding:10px 20px;
   text-shadow:unset;
-  width:calc(50% - 10px) !important;
+  width:calc(50% - 18px) !important;
 }
 
 article .at.ngp-form fieldset.ContributionInformation.forced-recurring label.label-amount:not(.label-otheramount):after {
@@ -782,7 +782,7 @@ article .at.ngp-form fieldset.ContributionInformation label.label-amount:hover a
   background:#a9a9a9;
   border:0;
   border-radius:0;
-  height:44px;
+  height:50px;
 }
 
 article .at.ngp-form fieldset.ContributionInformation label.label-amount input:checked + a {
@@ -798,7 +798,7 @@ article .at.ngp-form fieldset.ContributionInformation label.label-otheramount:be
   font-size:14px;
   left:0;
   line-height:18px;
-  height:44px;
+  height:50px;
   justify-content:flex-end;
   margin:unset;
   padding:4px 5px 4px 0;
@@ -1445,7 +1445,7 @@ footer.theme-footer p {
   article .at.ngp-form ol.at-steps li.at-step a:before,
   article .at.ngp-form ol.at-steps li.at-step b:before {margin:0 10px 0 0;}
   article .at.ngp-form .at-form-submit .step-prevNext .btn-at {padding:0 30px;}
-  article .at.ngp-form fieldset.ContributionInformation label.label-amount {width:calc((100% / 3) - 10px) !important;}
+  article .at.ngp-form fieldset.ContributionInformation label.label-amount {width:calc((100% / 3) - 18px) !important;}
   article .at.ngp-form fieldset.ContributionInformation label.label-otheramount {width:100% !important;}
 
   /* Custom Stuff */
@@ -1556,7 +1556,7 @@ footer.theme-footer p {
     width:unset;
   }
   ***/
-  article .at.ngp-form fieldset.ContributionInformation label.label-amount {width:calc(50% - 10px) !important;}
+  article .at.ngp-form fieldset.ContributionInformation label.label-amount {width:calc(50% - 18px) !important;}
   article .at.ngp-form .at-form-submit .step-prevNext {justify-content:space-between;}
   article .at.ngp-form .at-form-submit {justify-content:center;}
   
@@ -1626,7 +1626,7 @@ footer.theme-footer p {
   article .at.ngp-form ol.at-steps li.at-step a:before,
   article .at.ngp-form ol.at-steps li.at-step b:before {margin:0 10px 0 0;}
   
-  article .at.ngp-form fieldset.ContributionInformation label.label-amount {width:calc((100% / 3) - 10px) !important;}
+  article .at.ngp-form fieldset.ContributionInformation label.label-amount {width:calc((100% / 3) - 18px) !important;}
   article .at.ngp-form footer.FooterHtml {padding:20px 30px 0;}
   
   article .at.ngp-form .at-row.Country.PostalCode.City.StateProvince label {
