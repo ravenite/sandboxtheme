@@ -999,7 +999,7 @@ article section.article-content > .validation-logos {display:none;}
   justify-content:center;
 }
 
-article .validation-logos {margin:0 -10px 10px;}
+article .validation-logos {margin: 20px 0 30px;}
 .validation-logos figure.validation-logo {line-height: 0;margin:unset;padding: 0 15px;}
 
 .validation-logos figure.validation-logo a {
