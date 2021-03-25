@@ -738,7 +738,7 @@ article .at.ngp-form .at-form-submit .step-prevNext .btn-at {
   padding:6px 20px;
 }
 
-article .at.ngp-form .at-form-submit .step-prevNext .prev .btn-at {background:#999;}
+article .at.ngp-form .at-form-submit .step-prevNext .prev .btn-at {background:#999;line-height: 50px;}
 
 article .at.ngp-form .at-form-submit .back-link.at-submit {
   background-color:#ccc;
