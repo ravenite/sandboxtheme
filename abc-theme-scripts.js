@@ -4,7 +4,7 @@ var myPostRender = function(vals) {
   (function ($) {
 	
     $("article .at.ngp-form form .at-markup.FastAction").prependTo("article .at.ngp-form section.at-inner"); // Move the FastAction block up outside the form
-    $("article section.article-content > .validation-logos").prependTo("article .at.ngp-form section.at-inner footer.FooterHtml"); // Move the validation logos that are below the form into the form footer
+    $("footer.theme-footer .footer-container.upper").prependTo("article .at.ngp-form section.at-inner footer.FooterHtml"); // Move the validation logos that are below the form into the form footer
 
 
     // Whenever the "This donation is on behalf of a company or organization" box changes, show/hide the "Company or Organization Name" field
