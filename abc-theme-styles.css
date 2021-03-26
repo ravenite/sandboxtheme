@@ -129,7 +129,7 @@ article .at.ngp-form.multistep-layout {min-width:unset;}
 
 main section.at-inner {background:none;}
 article .at.ngp-form .at-form * {color:#473E36;}
-article .at.ngp-form header.at-title {text-align: left;}
+article .at.ngp-form header.at-title {margin-bottom: 10px;text-align: left;}
 
 article .at.ngp-form header.HeaderHtml h1,
 article .at.ngp-form .content.thankYou h1 {
