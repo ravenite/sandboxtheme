@@ -1660,6 +1660,7 @@ background-image: none;
   body.has-main-image  article .at.ngp-form figure.main-image {
     display: block;
   }
+  /** .has-main-image.columns-one article .at.ngp-form figure.main-image {display:none;}**/
   body.columns-two article .at.ngp-form figure.main-image {
     grid-row: 2 / 3;
     margin: 0 0 20px;
