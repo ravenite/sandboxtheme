@@ -45,10 +45,6 @@ main header.theme-header {
 }
 
 
-body.image-mobile-hide figure.main-image {
-  display: none !important;
-}
-
 header.theme-header .logo-container {
   margin:0 auto;
   padding: 0 20px;
@@ -1574,8 +1570,8 @@ footer.theme-footer p {
 
 
 @media (max-width:767px) {
-body.has-main-image main {
-background-image: none;
+body.image-mobile-hide figure.main-image {
+  display: none !important;
 }
   /* Read More Option */
 
