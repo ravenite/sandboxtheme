@@ -83,12 +83,18 @@ main article section.article-content {
   width:100%;
 }
 
-
+.at.ngp-form figure.main-image,
+.at.ngp-form header.at-title,
+.at.ngp-form header.at-markup,
+.at.ngp-form header.MeterHtml,
+.at.ngp-form header.HeaderHtml {
+	padding:0 20px;
+}
 /* FastAction */
 
 article .at.ngp-form .FastAction {
   margin:0;
-  padding: 20px 20px 0;
+  padding: 0 20px 0;
 }
 
 article .at.ngp-form .FastAction .fastAction {
@@ -122,7 +128,7 @@ article .at.ngp-form.multistep-layout {min-width:unset;}
 
 main section.at-inner {background:none;}
 article .at.ngp-form .at-form * {color:#473E36;}
-article .at.ngp-form header.at-title {padding: 10px 23px 0 23px;text-align: left;}
+article .at.ngp-form header.at-title {text-align: left;}
 
 article .at.ngp-form header.HeaderHtml h1,
 article .at.ngp-form .content.thankYou h1 {
@@ -157,8 +163,6 @@ article .at.ngp-form header.HeaderHtml .image-and-text-container.image-right.two
 }
 
 article .at.ngp-form header.HeaderHtml {
-  /***padding:20px 0;***/
-  padding: 10px 30px;
   margin:0;
   width: 100%;
 }
@@ -218,10 +222,8 @@ article .at.ngp-form .content.thankYou button.btn-social {
 
 
 /* Progress Meter Stuff */
-
 article .at.ngp-form header.MeterHtml {
   margin:0;
-  padding:0 30px;
   width:100%;
 }
 
@@ -266,10 +268,13 @@ article .at.ngp-form figure.progress-meter p.progress-meter-details {
   line-height:24px;
   margin:0 0 15px;
 }
-
+article .at.ngp-form figure.progress-meter p.progress-meter-details span strong {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
 article .at.ngp-form figure.progress-meter p.progress-meter-details span.progress-meter-goal {
   padding-left:10px;
-  text-align:right;
 }
 
 
@@ -1456,9 +1461,6 @@ footer.theme-footer p {
     font-size:1.9em;
     line-height: 1.23;
   }
-  article .at.ngp-form header.at-title {
-    padding: 10px 23px 0 23px;
-  }
   article .at.ngp-form .content.thankYou h1 {
     padding: 23px;
   }
@@ -1594,12 +1596,6 @@ footer.theme-footer p {
   }
   body.columns-two .at.ngp-form section.at-inner:before {
     display:none;
-  }  
-  body.columns-two .at.ngp-form figure.main-image, 
-  body.columns-two .at.ngp-form header.at-title, 
-  body.columns-two .at.ngp-form header.at-markup, 
-  body.columns-two .at.ngp-form header.MeterHtml {
-    padding-right: 10px;
   }
   body.columns-two article .at.ngp-form figure.main-image {
     display: block;
@@ -1608,14 +1604,12 @@ footer.theme-footer p {
   }
   body.columns-two .at.ngp-form header.at-title {
     grid-row: 2 / 3;
-    margin: 0 0 20px 20px;
   }
   body.columns-two .at.ngp-form header.MeterHtml {
     grid-row: 3 / 4;
   }
   body.columns-two .at.ngp-form header.HeaderHtml {
     grid-row: 4 / 5;
-    padding-bottom: 0;
   }
   body.columns-two .at.ngp-form form {
     grid-column: 2 / 3;
@@ -1684,10 +1678,6 @@ footer.theme-footer p {
     padding:25px 0 30px;
     /**width:500px;***/
   }
-    article .at.ngp-form header.at-title {
-    padding: 10px 28px 0 28px;
-  }
-
   article .at.ngp-form form {padding:0 10px;}
   body.columns-two main article .at.ngp-form form {padding: 0;}
     
@@ -1726,7 +1716,5 @@ footer.theme-footer p {
   body.columns-two .at.ngp-form figure.main-image,
   body.columns-two .at.ngp-form header.at-markup,
   body.columns-two .at.ngp-form header.MeterHtml,
-  body.columns-two .at.ngp-form header.HeaderHtml {
-    padding-right: 20px;
-  }
+  body.columns-two .at.ngp-form header.HeaderHtml {}
 }
