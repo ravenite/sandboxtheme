@@ -276,6 +276,7 @@ article .at.ngp-form figure.progress-meter p.progress-meter-details span strong 
 }
 article .at.ngp-form figure.progress-meter p.progress-meter-details span.progress-meter-goal {
   padding-left:10px;
+  text-align: center;
 }
 
 
@@ -1598,18 +1599,18 @@ footer.theme-footer p {
   body.columns-two .at.ngp-form section.at-inner:before {
     display:none;
   }
-  body.columns-two article .at.ngp-form figure.main-image {
-    display: block;
-    grid-row: 1 / 2;
-    margin: 0 0 20px;
-  }
   article .at.ngp-form header.at-title,
   article .at.ngp-form .content.thankYou h1 {
     font-size:1.9em;
     line-height: 1.23;
   }
   body.columns-two .at.ngp-form header.at-title {
+    grid-row: 1 / 2;
+  }
+  body.columns-two article .at.ngp-form figure.main-image {
+    display: block;
     grid-row: 2 / 3;
+    margin: 0 0 20px;
   }
   body.columns-two .at.ngp-form header.MeterHtml {
     grid-row: 3 / 4;
