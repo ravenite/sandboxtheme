@@ -117,8 +117,12 @@ article .at.ngp-form .FastAction p a {
   text-decoration:none;
 }
 
-article .at.ngp-form .FastAction p {font-size:13px;}
+article .at.ngp-form .FastAction p {font-size:13px;line-height: 19px;}
 article .at.ngp-form .FastAction .profile-link {background:#fff;}
+
+.fastAction.clearfix p span {
+  max-width: 50%;
+}
 
 article .at.ngp-form .FastAction .fa-cta span a {
   color:#fff;
@@ -469,7 +473,7 @@ body.contribution-theme .at-row.YesSignMeUpForUpdatesForBinder:after {
   content:"You'll receive email updates from ABC Birds. You can unsubscribe at any time.";
   font-size:12px;
   line-height:16px;
-  padding:0 10px 5px;
+  padding:0 10px 10px;
 }
 
 
@@ -529,14 +533,12 @@ article .at.ngp-form .form-item-selectedfrequency .radio-description-value-0 {
   background-image:url(https://raw.githubusercontent.com/ravenite/sandboxtheme/01f71c03db45636d285c051b63f8c08610383a38/curved-up-arrow.svg);
 }
 
-
 /* Checkboxes */
 
 article .at.ngp-form label.at-check {margin:5px 10px;}
 article .at.ngp-form .at-recipient-msg label.at-check.NotificationSendCopy {margin:5px 0 10px;}
 
 article .at.ngp-form .at-check.YesSignMeUpForUpdatesForBinder {position:relative;}
-article .at.ngp-form .at-check.YesSignMeUpForUpdatesForBinder label.at-check {margin: 5px 10px 15px 10px;}
 
 article .at.ngp-form .at-row.UpdateMyProfile {margin:5px 0;}
 article .at.ngp-form .updateMyProfileSection > label {margin:0;}
@@ -1110,7 +1112,7 @@ article.has-ecard .at.ngp-form fieldset.TributeGift {padding-top:0;}
 article.has-ecard fieldset.TributeGift .at-fields {
   border-top:1px solid #d9d9d9;
   margin:0;
-  padding:20px 0 0;
+  padding:10px 0 0;
 }
 
 article.has-ecard p.ecard-image-heading {
