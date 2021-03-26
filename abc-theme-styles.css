@@ -1551,8 +1551,24 @@ footer.theme-footer p {
 
 }
 
+
 @media (max-width:767px) {
-  
+
+  /* Read More Option */
+
+  body.form-layout-read_more article .at.ngp-form header.HeaderHtml > *,
+  body.form-layout-read_more article .at.ngp-form header.HeaderHtml.show-all span.show-full-body {display:none;}
+  body.form-layout-read_more article .at.ngp-form header.HeaderHtml.show-all > *,
+  body.form-layout-read_more article .at.ngp-form header.HeaderHtml > p:first-child,
+  body.form-layout-read_more article .at.ngp-form header.HeaderHtml > span.show-full-body {display:block;}
+  body.form-layout-read_more article .at.ngp-form header.HeaderHtml > span.show-full-body:nth-last-child(2) {display:none;} /* Advocacy double load */
+
+  body.form-layout-read_more article .at.ngp-form header.HeaderHtml > span.show-full-body {
+    color:#DC6B2F;
+    font-weight:500;
+  }
+  /* Footer */
+
   footer.theme-footer ul.footer-menu ul {display:none;}
   
 }
