@@ -1636,8 +1636,10 @@ footer.theme-footer p {
   body.columns-two .at.ngp-form header.at-title {
     grid-row: 1 / 2;
   }
-  body.columns-two article .at.ngp-form figure.main-image {
+  body.has-main-image  article .at.ngp-form figure.main-image {
     display: block;
+  }
+  body.columns-two article .at.ngp-form figure.main-image {
     grid-row: 2 / 3;
     margin: 0 0 20px;
   }
