@@ -630,7 +630,7 @@ article .at.ngp-form fieldset.ContributionInformation .at-recurring {
   flex-wrap:wrap;
   font-size:16px;
   line-height: 24px;
-  margin: 15px 0 20px 0;
+  margin: 5px 0 20px 0;
   padding: 0;
 }
 
@@ -1481,7 +1481,7 @@ footer.theme-footer p {
     /***justify-content:space-between;***/
   }
 
-  article .at.ngp-form .form-item-selectedfrequency .radios label {min-width: 125px;max-width:calc(50% - 5px);}
+  article .at.ngp-form .form-item-selectedfrequency .radios label {font-size: 18px;line-height: 23px;min-width: 125px;max-width:calc(50% - 5px);}
   article .at.ngp-form .form-item-selectedfrequency .radio-description {background-position:-7px 2px;}
 
   
