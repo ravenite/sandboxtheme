@@ -372,7 +372,7 @@ article .at.ngp-form fieldset.PaymentInformation + fieldset.AdditionalInformatio
 
 
 article .at.ngp-form .at-row.at-row-full.PremiumGift {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 article .at.ngp-form fieldset.Premiums .at-gifts {
   display: flex;
@@ -1043,7 +1043,8 @@ article .at.ngp-form footer.FooterHtml p {
   margin:0 0 15px;
 }
 article footer.FooterHtml .footer-container.upper p {
-  font-size: .8em;
+    font-size: 14px;
+    text-align: center;
 }
 article .at.ngp-form footer.FooterHtml p:last-child {margin:0;}
 
