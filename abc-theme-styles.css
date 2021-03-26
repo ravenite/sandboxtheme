@@ -84,6 +84,10 @@ main article section.article-content {
   width:100%;
 }
 
+
+.has-bg-image.column-one figure.main-image {
+    display: none;
+}
 .at.ngp-form figure.main-image,
 .at.ngp-form header.at-title,
 .at.ngp-form header.at-markup,
