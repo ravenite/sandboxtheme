@@ -1760,7 +1760,7 @@ background-image: none;
   }
   article .at.ngp-form header.at-title,
   article .at.ngp-form .content.thankYou h1 {
-    font-size: 1.9em;
+    font-size: 1.65em;
     line-height: 1.23;
   }
 
@@ -1791,6 +1791,10 @@ background-image: none;
 @media (min-width:1200px) {
   /* header */
   header.theme-header section.logo-container {}
+  article .at.ngp-form header.at-title,
+  article .at.ngp-form .content.thankYou h1 {
+    font-size: 1.9em;
+  }
   /* CTA */
   .cta-section.row {
     max-width: 1170px;
