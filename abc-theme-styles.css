@@ -1553,7 +1553,9 @@ footer.theme-footer p {
 
 
 @media (max-width:767px) {
-
+body.has-main-image main {
+background-image: none;
+}
   /* Read More Option */
 
   body.form-layout-read_more article .at.ngp-form header.HeaderHtml > *,
