@@ -1,89 +1,63 @@
 /* PostRender */
-
 var myPostRender = function(vals) {
   (function ($) {
-	
-    $("article .at.ngp-form form .at-markup.FastAction").prependTo("article .at.ngp-form section.at-inner"); // Move the FastAction block up outside the form
-    $("footer.theme-footer .footer-container.upper").prependTo("article .at.ngp-form section.at-inner footer.FooterHtml"); // Move the validation logos that are below the form into the form footer
+
+  $("footer.theme-footer .footer-container.upper").prependTo("article .at.ngp-form section.at-inner footer.FooterHtml"); // Move the validation logos that are below the form into the form footer
+  $("body.has-main-image article figure.main-image").prependTo("body.has-main-image article section.at-inner"); // Move the main image down on header image themed forms   
 
 
-    // Whenever the "This donation is on behalf of a company or organization" box changes, show/hide the "Company or Organization Name" field
-    $(".at-row.on-behalf-of-checkbox input[type=checkbox]").change(function(){
-      if ($(".at-row.on-behalf-of-checkbox input[type=checkbox]").prop("checked")) {$(".at-row.on-behalf-of-textfield").show();}
-      else {$(".at-row.on-behalf-of-textfield").hide();}
-	});
 
-	// If there's nothing left in the Additional Information fieldset, add a class to the fieldset
-	if ($('article .at.ngp-form fieldset.AdditionalInformation .at-fields').children().length == 0) {
+    // Enable the "Read More" option if it's chosen in the Theme
+    if ($('body.form-layout-read_more').length) {
+    console.log("Read more!");
+      // Function to instantiate the "Read More" if there is more than one child of the HeaderHtml element
+      var bodyContentElements = $('article .at.ngp-form header.HeaderHtml').children().length; // Check on the number of children inside the header.HeaderHtml
+      if (bodyContentElements >= 2) { // If it's 2 or more
+        $('<span class="show-full-body">Read More</span>').appendTo('article .at.ngp-form header.HeaderHtml'); // Add a "Read More"
+        $('span.show-full-body').click(function() { // If that Read More is clicked
+          $(this).parent('header').toggleClass('show-all'); // Update the class of the header.HeaderHtml
+        });
+      }  
+  } // End of if statement for Read More logic
+  
+  //  $('article .at.ngp-form .at-row.on-behalf-of-textfield').hide(); // Hide that field by default, for the purposes of the show/hide logic below
+  //  $("article .at.ngp-form .at-row[class*='MappedCustomFormFieldQuestion_66']").addClass("premium-opt-out").appendTo("article .at.ngp-form .ContributionInformation .at-fields"); // Move the premium opt-out checkbox to the end of the Contribution fieldset
+ 
+    $("article .at.ngp-form section.premium-content-container").prependTo("article .at.ngp-form .premium-opt-out"); // Move the premium content description inside the wrapper for the opt-out checkbox
+    $("article .at.ngp-form .at-row[class*='MappedCustomFormFieldQuestion_6']").addClass("partner-orgs").appendTo("article .at.ngp-form .ContactInformation .at-fields"); // Move the Corporate Partner Loyalty ID field to the end of the Contact fieldset  
+
+ 
+  // If there's nothing left in the Additional Information fieldset, add a class to the fieldset
+  if ($('article .at.ngp-form fieldset.AdditionalInformation .at-fields').children().length == 0) {
       $('article .at.ngp-form fieldset.AdditionalInformation').addClass('hide-additional-information');
-	}
-    
-    
+  }
+
+  // Move the main image down on header image themed forms
+  $("body.has-main-image article figure.main-image").prependTo("body.has-main-image article section.at-inner"); 
+
     // Contribution specific stuff
+    if ($(".ContributionInformation")[0]){
+        $("body").addClass("contribution-theme");
+    }
     if ($("body").hasClass("contribution-theme")){  
 
       // Check to see if it's a recurring only form; if it is (forced recurring) then add a class to the fieldset for later CSS manipulation
       // This will cause problems with forms without this structure, so stick it inside a try/catch
-	  try {
-	    var recurringObject = nvtag.tags[0].formviews.current.subviews.ContributionInformation.subviews.IsRecurring.def;
-	    if (recurringObject.name === "IsRecurring" && recurringObject.type === "hidden" && recurringObject.value === true) {
+    try {
+      var recurringObject = nvtag.tags[0].formviews.current.subviews.ContributionInformation.subviews.IsRecurring.def;
+      if (recurringObject.name === "IsRecurring" && recurringObject.type === "hidden" && recurringObject.value === true) {
           $("article .at.ngp-form .ContributionInformation").addClass("forced-recurring");
         } else {};
-	  } catch {}
-    
-      $("<p id='calc-explainer'></p>").insertAfter("article .at.ngp-form .form-type-radios.form-item-selectamount"); // Add in the element that will get modified by the amount chosen
-      isOtherAmount = "false"; // instantiate this, since it's necessary for the getCurrentAmount function
-      
-      // Create a calculationMultiplier variable, based on the value chosen for corresponding theme field. This will be applied to the calculation
-      if ($("article").hasClass("calculation-three")){calculationMultiplier = 30;}
-      else if ($("article").hasClass("calculation-two")){calculationMultiplier = 20;}
-      else {calculationMultiplier = 10;}
-      
-      // Create a function for reuse, since this might fire a lot
-      function getCurrentAmount() {
-        setTimeout(function() { // give it a hundredth of a second, since it seems to need a slight delay to be accurate
-          var currentValue = nvtag.tags[0].formviews.current.val(["Amount"]); // This is the current amount chosen
-          var chosenFrequency = parseInt(nvtag.tags[0].formviews.current.val(["SelectedFrequency"])); // Parse as an integer the value of the SelectedFrequency, if it's recurring
-          var numberOfMeals = (currentValue * calculationMultiplier).toLocaleString("en"); // Add the necessary commas
-          // create a replacement variable if it's a monthly contribution
-          if (chosenFrequency === 4) { var monthlyReplacement = " each month";}
-          else {var monthlyReplacement = "";}
-          // change the language out from what it was, and differently if it's the other option that's been chosen
-          if (currentValue === "0.00") {isOtherAmount = "true";} else {} // Check to see if the "Other" option is defaulted, because the click logic won't fire on form load
-          if (isOtherAmount === "true") {$("p#calc-explainer").text("To help provide as many meals as possible" + monthlyReplacement);}
-          else {$("p#calc-explainer").text("Will help provide " + numberOfMeals + " meals" + monthlyReplacement);}	   
-        }, 10);
-      }
-    
-      // Run this every time an amount option is clicked. If it's the other option that's clicked, pass that into the function to change the language
-      $('.at.ngp-form .form-type-radios').on("click", "label.label-amount", function() {
-        var $label = $(this);
-        if ($label.hasClass("label-otheramount")) {isOtherAmount = "true";}
-        else {isOtherAmount = "false";}
-        getCurrentAmount();
-      });
-    
-      // Run this function a half second after page load, to capture the defaulted amount
-      setTimeout(function() {getCurrentAmount();}, 500);
-      
-      // When the form is loaded or the toggle is clicked, make sure the chosen option has the "selected" class so you can apply the necessary CSS
-      /// Also, run the getCurrentAmount function to recalculate the explainer
-      $(".at.ngp-form .form-item-selectedfrequency .radios label input:checked").closest("label").addClass("selected");
-      $(".at.ngp-form .form-item-selectedfrequency .radios label input").change(function() {
-	    $(".at.ngp-form .form-item-selectedfrequency .radios label.selected").closest("label").removeClass("selected");
-	    $(this).closest("label").addClass("selected");
-	    isOtherAmount = "false"; // unset this value if the toggle changes; it'll otherwise cause complications with the calculation
-	    getCurrentAmount();
-      });
+    } catch {}
+  
       
       // Check to see if an Ecard exists. If it does, move it around per the design      
       if ( $("article .at.ngp-form fieldset.RecipientInformation .at-row.Ecard").length ) {
-	    
-	    $("body article").addClass("has-ecard"); // Give the article a "has-ecard" class, just to make things easier.
-	    $("article.has-ecard .at.ngp-form .ContributionInformation").insertBefore("article.has-ecard .at.ngp-form .ContactInformation"); // Move the entire Contribution Information section down below the ecard/tribute stuff
-	    $("article.has-ecard .at.ngp-form fieldset.RecipientInformation .form-unit-radio.form-item-ecard").addClass("ecards-container").prependTo("article.has-ecard .at.ngp-form fieldset.TributeGift > .at-fields"); // Move the actual ecard piece up to the top of the form
-	    $("article.has-ecard .at.ngp-form fieldset.TributeGift .ecards-container:first-of-type").append("<p class='ecard-image-heading'>Your e-card</p><figure class='ecard-image-container'><img src='' alt='' /></figure>"); // add some pieces and scaffolding, per the design
-	    $("article.has-ecard .at.ngp-form .at-recipient-msg label.at-date").addClass("far fa-calendar-alt"); // add the calendar icon to the send date
+      
+      $("body article").addClass("has-ecard"); // Give the article a "has-ecard" class, just to make things easier.
+      $("article.has-ecard .at.ngp-form fieldset.RecipientInformation .form-unit-radio.form-item-ecard").addClass("ecards-container"); // Move the actual ecard piece up to the top of the form
+      $("article.has-ecard .at.ngp-form fieldset.TributeGift .ecards-container:first-of-type").append("<p class='ecard-image-heading'>Your e-card</p><figure class='ecard-image-container'><img src='' alt='' /></figure>"); // add some pieces and scaffolding, per the design
+      $("article.has-ecard .at.ngp-form .at-recipient-msg label.at-date").addClass("far fa-calendar-alt"); // add the calendar icon to the send date
         
         // Create a function to grab the value of the image currently chosen, and pull it up above the array of options
         function updateEcardImage() {
@@ -107,7 +81,7 @@ var myPostRender = function(vals) {
     
     // Check to see if the Progress Meter exists. If it does, replace the iframe's meter with constructed progress meter.
     if ( $("article .at.ngp-form header.MeterHtml").length ) {
-	    
+      
       // Use a function to make properly formatted versions of the Progress Meter's numbers
       function numberWithCommas(number) {
         var parts = number.toString().split(".");
@@ -139,7 +113,7 @@ var myPostRender = function(vals) {
           meterTarget = numberWithCommas(parseFloat(data.targetAmount)); // set a value for the goal, with the appropriate separators
         }
         $("article .at.ngp-form header.MeterHtml").append('<figure class="progress-meter"><progress class="progress-bar-display" max="100" value="' + meterProgress + '"></progress><p class="progress-meter-details"><span class="progress-meter-submitters">' + meterSubmittersDetails + '</span><span class="progress-meter-goal">Goal: <strong>' + meterTarget +'</strong></span></p></figure>'); // Inject the progress meter into the form
-      });	    
+      });     
     } // End of if statement for Progress Meter logic
 
   }(jQuery));
