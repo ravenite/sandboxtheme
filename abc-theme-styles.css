@@ -175,9 +175,9 @@ article .at.ngp-form header.HeaderHtml .image-and-text-container.image-right.two
 
 article .at.ngp-form header.HeaderHtml {
   margin:0;
+  padding-bottom: 20px;
   width: 100%;
 }
-
 article .at.ngp-form header.HeaderHtml h2 {
   font-size:18px;
   font-weight:700;
@@ -1614,8 +1614,11 @@ footer.theme-footer p {
     box-shadow:0 2px 4px 0 rgba(0,0,0,.5);
   }
   main section.at-inner {padding: 10px;}
-  article .at.ngp-form header.HeaderHtml {padding: 10px 20px;}
+  article .at.ngp-form header.HeaderHtml {padding: 10px 20px 20px 20px;}
 
+  body.form-layout-read_more article .at.ngp-form header.HeaderHtml > span.show-full-body {
+   display:none;
+  }
   body.no-main-image main article section.article-content {width:100%;}
   
   article .at.ngp-form ol.at-steps {margin:20px 20px 0;}
