@@ -524,7 +524,7 @@ article .at.ngp-form .form-item-selectedfrequency .radio-description {
   font-family: Kalam, script;
   font-size: 18px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 24px;
   margin: 0;
   padding: 20px 0 10px 35px;
   width: 100%;
@@ -629,8 +629,8 @@ article .at.ngp-form fieldset.ContributionInformation .at-recurring {
   display:flex;
   flex-wrap:wrap;
   font-size:16px;
-  line-height:20px;
-  margin: 15px 0;
+  line-height: 24px;
+  margin: 15px 0 20px 0;
   padding: 0;
 }
 
@@ -928,14 +928,14 @@ article .at.ngp-form fieldset.TributeGift label.EnableTributeGift {margin:5px 0;
 
 article .at.ngp-form .at-tribute-gift,
 article .at.ngp-form .at-tribute-gift label {
-  line-height:20px;
+  line-height:24px;
   margin:0;
 }
 
 article .at.ngp-form .at-tribute-gift label.HonoreeName {font-weight:400;}
-article .at.ngp-form .at-check.IncludeRecipient {margin:5px 10px;}
+article .at.ngp-form .at-check.IncludeRecipient {margin:5px 10px 10px};
 article .at.ngp-form fieldset.RecipientInformation {padding:0 10px !important;}
-article .at.ngp-form .form-item-inhonororinmemoryof {margin:5px 0;}
+article .at.ngp-form .form-item-inhonororinmemoryof {margin:10px 0;}
 
 article .at.ngp-form .form-item-inhonororinmemoryof > label {
   font-weight:700;
