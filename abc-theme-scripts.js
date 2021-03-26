@@ -1,8 +1,9 @@
 /* PostRender */
 var myPostRender = function(vals) {
   (function ($) {
-
-  $("footer.theme-footer .footer-container.upper").prependTo("article .at.ngp-form section.at-inner footer.FooterHtml"); // Move the validation logos that are below the form into the form footer
+  if ($("body").hasClass("contribution-theme")){  
+   $("footer.theme-footer .footer-container.upper").prependTo("article .at.ngp-form section.at-inner footer.FooterHtml"); // Move footer-container upper if it is a contribution form
+  }
   $("body.has-main-image article figure.main-image").prependTo("body.has-main-image article section.at-inner"); // Move the main image down on header image themed forms   
 
 
