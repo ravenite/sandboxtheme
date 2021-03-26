@@ -394,8 +394,6 @@ fieldset.Premiums .at-gifts .at-gift .gift-img-container {
     width: 60px;
     height: 60px;
 }
-
-
 article .at.ngp-form fieldset.Premiums .at-gifts .at-gift .description {
     margin: 0;
     padding: 0 0 0 5px;
@@ -410,9 +408,15 @@ article .at.ngp-form .form-unit.form-unit-radio.form-item-premiumgift label {
   padding: 0 10px 0 0;
 }
 
+
+
+.at-fieldset.ShippingInformation .at-shipping-destinations label {
+    line-height: 44px !important;
+}
+
 article .at.ngp-form legend.at-legend {
   border-top:0;
-  font-size:24px;
+  font-size:18px;
   font-weight:400;
   line-height:24px;
   margin:0 10px;
