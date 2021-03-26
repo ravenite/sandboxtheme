@@ -40,6 +40,11 @@ main header.theme-header {
   width:100%;
 }
 
+
+body.image-mobile-hide section.header-image figure.main-image {
+  display: none !important;
+}
+
 header.theme-header .logo-container {
   margin:0 auto;
   padding: 0 20px;
@@ -143,7 +148,7 @@ main section.at-inner {background:none;}
 article .at.ngp-form .at-form * {color:#473E36;}
 article .at.ngp-form header.at-title {margin-bottom: 10px;text-align: left;}
 
-article .at.ngp-form figure.main-image {display: none;margin:0;}
+article .at.ngp-form figure.main-image {display: none;margin: 0 0 10px 0;}
 
 article .at.ngp-form header.HeaderHtml h1,
 article .at.ngp-form .content.thankYou h1 {
@@ -256,7 +261,7 @@ article .at.ngp-form figure.progress-meter progress {
   appearance:none;
   background:#fff;
   border:1px solid #A9A9A9;
-  border-radius:0;
+  border-radius:5px;
   display:block;
   height:30px;
   margin:0 0 10px;
@@ -365,12 +370,39 @@ article .at.ngp-form fieldset.RecipientInformation + fieldset.ContactInformation
 article .at.ngp-form fieldset.ContactInformation + fieldset.PaymentInformation,
 article .at.ngp-form fieldset.PaymentInformation + fieldset.AdditionalInformation:not(.hide-additional-information) {margin-top:25px;}
 
+
+article .at.ngp-form .at-row.at-row-full.PremiumGift {
+  margin-bottom: 20px;
+}
+article .at.ngp-form fieldset.Premiums .at-gifts {
+  display: flex;
+  flex-wrap: wrap;
+}
+article .at.ngp-form fieldset.Premiums .at-gift {
+  flex-basis: 50%;
+  margin:0;
+  padding: 0 10px;
+  width:50%;
+}
+fieldset.Premiums .at-gifts .at-gift .gift-img,
+fieldset.Premiums .at-gifts .at-gift .gift-img-container {
+    width: 60px;
+    height: 60px;
+}
+
+
+article .at.ngp-form fieldset.Premiums .at-gifts .at-gift .description {
+    margin: 0;
+    padding: 0 0 0 5px;
+}
 article .at.ngp-form div.updateMyProfileSection span.text {
     font-size: 16px;
 }
 article .at.ngp-form .form-unit.form-unit-radio.form-item-premiumgift label {
-    font-size: 16px;
-    line-height: 18px;
+  font-size: 16px;
+  line-height: 18px;
+  margin: 0;
+  padding: 0 10px 0 0;
 }
 
 article .at.ngp-form legend.at-legend {
@@ -568,7 +600,7 @@ article .at.ngp-form label.at-check.authorize-payment-label > span:after {
   background-image:url(https://nvlupin.blob.core.windows.net/images/van/ABCON/ABCON/1/88500/images/SANDBOX/themes/check-mark.svg);
   background-position:center;
   background-repeat:no-repeat;
-  background-size:12px 12px;
+  background-size:14px 14px;
   border: 1px solid #999;
   content:"";
   font-size:12px;
@@ -818,6 +850,37 @@ article .at.ngp-form fieldset.ContributionInformation label.label-amount input[n
   top:0;
   width:1px !important;
 }
+article .at.ngp-form fieldset.ContributionInformation input.edit-otheramount,
+article .at.ngp-form fieldset.ContributionInformation input.edit-otheramount:required::selection {
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    color: #666;
+    height: 50px;
+    letter-spacing: unset;
+    line-height: 50px;
+    margin: 0;
+    padding: 0 20px 0 30px;
+    position: absolute;
+    left: 0px;
+    top: 0;
+}
+
+article .at.ngp-form fieldset.ContributionInformation label.label-otheramount {
+    color: #fff;
+}
+article .at.ngp-form fieldset.ContributionInformation label.label-otheramount input {
+  font-size: 22px;
+  line-height: 29px;
+}
+article .at.ngp-form fieldset.ContributionInformation label.label-otheramount .error {
+  display:block;
+  font-size:14px;
+  line-height:18px;
+  margin:0;
+  padding:5px 0 0;
+  width:100%;
+}
 
 article .at.ngp-form fieldset.ContributionInformation label.label-amount a,
 article .at.ngp-form fieldset.ContributionInformation label.label-amount a:hover,
@@ -834,92 +897,20 @@ article .at.ngp-form fieldset.ContributionInformation label.label-amount input:c
     color: white;
 }
 
-article .at.ngp-form fieldset.ContributionInformation label.label-otheramount:before {
-  content:"Enter Your Own Amount ";
-  color:#3c3c3c;
-  display:block;
-  font-size:14px;
-  left:0;
-  line-height:18px;
-  height:50px;
-  justify-content:flex-end;
-  margin:unset;
-  padding:4px 5px 4px 0;
-  position:relative;
-  top:0;
-  width:125px;
-  text-align:right;
-  white-space:pre-wrap;
+.clearfix:after {
+    clear: both;
 }
-
-article .at.ngp-form fieldset.ContributionInformation label.label-amount.label-otheramount {
-  background:transparent;
-  display:flex;
-  flex-wrap:wrap;
-  float:unset;
-  font-size:0;
-  height:auto;
-  line-height:44px;
-  margin-bottom:10px;
-  padding:0;
-  position:relative;
-  width:100% !important;
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: " ";
 }
-
-article .at.ngp-form fieldset.ContributionInformation input.edit-otheramount,
-article .at.ngp-form fieldset.ContributionInformation input.edit-otheramount:required::selection {
-  background:none;
-  border:1px solid #ccc;
-  border-radius:0;
-  color:#666;
-  height:44px;
-  letter-spacing:unset;
-  line-height:44px;
-  margin:0;
-  padding:0 20px 0 20px;
-  position:relative;
-  top:0;
-  transition:background-color .25s ease-in-out, border-color .25s ease-in-out;
-  width:calc(100% - 125px) !important;
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
-
-article .at.ngp-form fieldset.ContributionInformation input.edit-otheramount::placeholder {
-  color:#3c3c3c;
-  font-weight:400;
-  opacity:1;
-}
-
-article .at.ngp-form fieldset.ContributionInformation input:checked + input.edit-otheramount {
-  background:#fff;
-  border:2px solid #DC6B2F;
-  color:#3c3c3c;
-  font-weight:400;
-  padding:0 20px 0 20px;
-}
-
-article .at.ngp-form fieldset.ContributionInformation input:checked + input.edit-otheramount::placeholder {color:#fff;}
-
-article .at.ngp-form fieldset.ContributionInformation label.label-otheramount span,
-article .at.ngp-form fieldset.ContributionInformation input.edit-otheramount:required + span {
-  border:0;
-  color:#3c3c3c;
-  display:block;
-  font-size:16px;
-  height:44px;
-  left:125px;
-  line-height:44px;
-  padding:0 0 0 10px;
-}
-
-article .at.ngp-form fieldset.ContributionInformation label.label-otheramount .error {
-  display:block;
-  font-size:14px;
-  line-height:18px;
-  margin:0;
-  padding:5px 0 0;
-  width:100%;
-}
-
 
 /* In Honor / Memory of */
 
@@ -1110,7 +1101,6 @@ article .at.ngp-form .designation-local-or-national .radios {
 article.has-ecard .at.ngp-form fieldset.TributeGift {padding-top:0;}
 
 article.has-ecard fieldset.TributeGift .at-fields {
-  border-top:1px solid #d9d9d9;
   margin:0;
   padding:10px 0 0;
 }
