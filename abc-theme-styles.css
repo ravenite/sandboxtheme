@@ -1592,6 +1592,9 @@ footer.theme-footer p {
     grid-template-columns: 300px 380px;
     padding-top: 10px;
   }
+  body.columns-two .at.ngp-form section.at-inner:before {
+    display:none;
+  }  
   body.columns-two .at.ngp-form figure.main-image, 
   body.columns-two .at.ngp-form header.at-title, 
   body.columns-two .at.ngp-form header.at-markup, 
@@ -1686,7 +1689,8 @@ footer.theme-footer p {
   }
 
   article .at.ngp-form form {padding:0 10px;}
-
+  body.columns-two main article .at.ngp-form form {padding: 0;}
+    
   article .at.ngp-form ol.at-steps li.at-step a,
   article .at.ngp-form ol.at-steps li.at-step b {flex-direction:row;}
   article .at.ngp-form ol.at-steps li.at-step a:before,
