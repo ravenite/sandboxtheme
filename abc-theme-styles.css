@@ -273,12 +273,16 @@ article .at.ngp-form figure.progress-meter p.progress-meter-details {
 }
 article .at.ngp-form figure.progress-meter p.progress-meter-details span strong {
   display: block;
+  font-size: 18px;
+  font-weight: 400;
   margin: 0 auto;
   text-align: center;
 }
 article .at.ngp-form figure.progress-meter p.progress-meter-details span.progress-meter-goal {
-  padding-left:10px;
-  text-align: center;
+ font-size: 15px;
+ font-weight: 600;
+ padding-left:10px;
+ text-align: center;
 }
 
 
