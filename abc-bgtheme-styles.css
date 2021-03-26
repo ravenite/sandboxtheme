@@ -532,10 +532,12 @@ article .at.ngp-form .form-item-selectedfrequency .radio-description-value-0 {
 
 /* Checkboxes */
 
-article .at.ngp-form label.at-check {margin:5px 10px;margin: 5px 10px 15px 10px;}
+article .at.ngp-form label.at-check {margin:5px 10px;}
 article .at.ngp-form .at-recipient-msg label.at-check.NotificationSendCopy {margin:5px 0 10px;}
 
 article .at.ngp-form .at-check.YesSignMeUpForUpdatesForBinder {position:relative;}
+article .at.ngp-form .at-check.YesSignMeUpForUpdatesForBinder label.at-check {margin: 5px 10px 15px 10px;}
+
 article .at.ngp-form .at-row.UpdateMyProfile {margin:5px 0;}
 article .at.ngp-form .updateMyProfileSection > label {margin:0;}
 
@@ -580,7 +582,7 @@ article .at.ngp-form label.at-check.authorize-payment-label > span {
   font-size:14px;
   line-height:20px;
   margin:0;
-  padding-left:28px;
+  padding-left:32px;
   text-transform:none;
 }
 
@@ -1663,8 +1665,8 @@ background-image: none;
   }
   article .at.ngp-form header.at-title,
   article .at.ngp-form .content.thankYou h1 {
-    font-size:1.9em;
-    line-height: 1.23;
+    font-size: 1.3em;
+    line-height: 1.3;
   }
   body.columns-two .at.ngp-form header.at-title {
     grid-row: 1 / 2;
@@ -1756,6 +1758,12 @@ background-image: none;
     padding:25px 0 30px;
     /**width:500px;***/
   }
+  article .at.ngp-form header.at-title,
+  article .at.ngp-form .content.thankYou h1 {
+    font-size: 1.9em;
+    line-height: 1.23;
+  }
+
   article .at.ngp-form form {padding:0;}
   body.columns-two main article .at.ngp-form form {padding: 0;}
     
