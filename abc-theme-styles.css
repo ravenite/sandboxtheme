@@ -1675,7 +1675,7 @@ background-image: none;
     grid-column: 2 / 3;
     grid-row: 1 / 7;
   }
-  body.contribution-theme  .at.ngp-form form footer.FooterHtml {
+  body.contribution-theme article .at.ngp-form footer.FooterHtml {
   grid-column: 2 / 3;
   grid-row: 7 / 8;
   }
