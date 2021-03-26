@@ -1696,7 +1696,7 @@ footer.theme-footer p {
     padding:25px 0 30px;
     /**width:500px;***/
   }
-  article .at.ngp-form form {padding:0 10px;}
+  article .at.ngp-form form {padding:0;}
   body.columns-two main article .at.ngp-form form {padding: 0;}
     
   article .at.ngp-form ol.at-steps li.at-step a,
