@@ -1132,6 +1132,9 @@ article.has-ecard .at.ngp-form .ecards-container .at-ecard {
   width:calc((100%/3) - 10px) !important;
 }
 
+.at-ecards.clearfix {
+  display:block;
+}
 article.has-ecard .at.ngp-form .ecards-container .at-ecard.selected {
   border:5px solid #DC6B2F;
   border-radius:5px;
