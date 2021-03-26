@@ -24,6 +24,10 @@ main {
   margin:0 auto;
   width:100%;
 }
+main article {
+  padding:40px 0 60px 0;
+}
+
 
 .green {color:#4e5b31;}
 .gold {color:#DC6B2F;}
@@ -502,13 +506,14 @@ article .at.ngp-form .at-row.Prefix.FirstName.LastName label.Prefix {
 
 article .at.ngp-form input::placeholder {opacity:.5;}
 
+/**
 body.contribution-theme .at-row.YesSignMeUpForUpdatesForBinder:after {
   content:"You'll receive email updates from ABC Birds. You can unsubscribe at any time.";
   font-size:12px;
   line-height:16px;
   padding:0 10px 10px;
 }
-
+***/
 
 /* Toggle */
 
@@ -838,6 +843,12 @@ article .at.ngp-form fieldset.ContributionInformation label.label-amount {
   text-shadow:unset;
   width:calc(50% - 18px) !important;
 }
+
+body article .at.ngp-form fieldset.ContributionInformation label.label-amount.incrediblyLong {
+  width:calc(50% - 18px) !important;
+}
+
+
 
 article .at.ngp-form fieldset.ContributionInformation.forced-recurring label.label-amount:not(.label-otheramount):after {
   content:"/mo";
@@ -1611,7 +1622,7 @@ background-image: none;
     flex-direction:column;
     justify-content:flex-start;
     margin:0 auto;
-    padding:40px 0;
+    padding:40px 0 80px 0;
     width:700px;
   }
   
