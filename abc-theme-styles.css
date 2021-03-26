@@ -1034,6 +1034,9 @@ article .at.ngp-form footer.FooterHtml p:last-child {margin:0;}
 
 article section.article-content > .validation-logos {display:none;}
 
+body.contribution-theme footer.FooterHtml {
+  display: block !important;
+}
 .validation-logos {
   display:flex;
   justify-content:center;
