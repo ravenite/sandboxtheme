@@ -1,12 +1,11 @@
 /* PostRender */
 var myPostRender = function(vals) {
   (function ($) {
-  if ($("body").hasClass("contribution-theme")){  
-   $("footer.theme-footer .footer-container.upper").prependTo("article .at.ngp-form section.at-inner footer.FooterHtml"); // Move footer-container upper if it is a contribution form
-  }
   $("body.has-main-image article figure.main-image").prependTo("body.has-main-image article section.at-inner"); // Move the main image down on header image themed forms   
-
-
+  if ($(".ContributionInformation")[0]){
+      $("body").addClass("contribution-theme");
+      $("footer.theme-footer .footer-container.upper").prependTo("article .at.ngp-form section.at-inner footer.FooterHtml"); // Move footer-container upper if it is a contribution form
+  }
 
     // Enable the "Read More" option if it's chosen in the Theme
     if ($('body.form-layout-read_more').length) {
@@ -37,9 +36,6 @@ var myPostRender = function(vals) {
   $("body.has-main-image article figure.main-image").prependTo("body.has-main-image article section.at-inner"); 
 
     // Contribution specific stuff
-    if ($(".ContributionInformation")[0]){
-        $("body").addClass("contribution-theme");
-    }
     if ($("body").hasClass("contribution-theme")){  
 
       // Check to see if it's a recurring only form; if it is (forced recurring) then add a class to the fieldset for later CSS manipulation
