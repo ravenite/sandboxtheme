@@ -848,8 +848,6 @@ body article .at.ngp-form fieldset.ContributionInformation label.label-amount.in
   width:calc(50% - 18px) !important;
 }
 
-
-
 article .at.ngp-form fieldset.ContributionInformation.forced-recurring label.label-amount:not(.label-otheramount):after {
   content:"/mo";
   margin-left:-5px;
