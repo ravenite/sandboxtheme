@@ -1458,7 +1458,7 @@ footer.theme-footer p {
 
   article .at.ngp-form header.at-title,
   article .at.ngp-form .content.thankYou h1 {
-    font-size:1.9em;
+    font-size:1.2em;
     line-height: 1.23;
   }
   article .at.ngp-form .content.thankYou h1 {
@@ -1591,7 +1591,7 @@ footer.theme-footer p {
   /* two columns */ 
   body.columns-two .at.ngp-form section.at-inner {
     display: grid;
-    grid-template-columns: 300px 380px;
+    grid-template-columns: 40% 60%;
     padding-top: 10px;
   }
   body.columns-two .at.ngp-form section.at-inner:before {
@@ -1601,6 +1601,11 @@ footer.theme-footer p {
     display: block;
     grid-row: 1 / 2;
     margin: 0 0 20px;
+  }
+  article .at.ngp-form header.at-title,
+  article .at.ngp-form .content.thankYou h1 {
+    font-size:1.9em;
+    line-height: 1.23;
   }
   body.columns-two .at.ngp-form header.at-title {
     grid-row: 2 / 3;
@@ -1670,7 +1675,7 @@ footer.theme-footer p {
   body.no-main-image main article {}
   
   body.columns-two main article {
-    width:1080px;
+    width:900px;
   }
   body.no-main-image main article {}
     
@@ -1708,7 +1713,10 @@ footer.theme-footer p {
   /* CTA */
   .cta-section.row {
     max-width: 1170px;
-  } 
+  }
+  body.columns-two main article {
+   width: 1080px;
+  }
   body.columns-two .at.ngp-form section.at-inner {
     grid-template-columns: 500px 560px;
     padding-top: 20px;
