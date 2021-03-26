@@ -45,7 +45,7 @@ main header.theme-header {
 }
 
 
-body.image-mobile-hide section.header-image figure.main-image {
+body.image-mobile-hide figure.main-image {
   display: none !important;
 }
 
@@ -153,7 +153,7 @@ main section.at-inner {background:none;}
 article .at.ngp-form .at-form * {color:#473E36;}
 article .at.ngp-form header.at-title {margin-bottom: 10px;text-align: left;}
 
-article .at.ngp-form figure.main-image {display: none;margin: 0 0 10px 0;}
+article .at.ngp-form figure.main-image {margin: 0 0 10px 0;}
 
 article .at.ngp-form header.HeaderHtml h1,
 article .at.ngp-form .content.thankYou h1 {
