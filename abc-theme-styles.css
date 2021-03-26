@@ -76,17 +76,21 @@ figure.branding figcaption {
   text-align: center;
 }
 
+
+section.header-image figure.main-image {
+background-size: cover;
+background-position: 50% 33%;
+margin: 0;
+height: 250px;
+width: 100%;
+}
+
 main article section.article-content {
   background:#fff;
   /* ask */
   padding: 0 0 5px 30px;
   padding: 10px 0 5px 0;
   width:100%;
-}
-
-
-.has-bg-image.column-one figure.main-image {
-    display: none;
 }
 .at.ngp-form figure.main-image,
 .at.ngp-form header.at-title,
@@ -135,7 +139,7 @@ main section.at-inner {background:none;}
 article .at.ngp-form .at-form * {color:#473E36;}
 article .at.ngp-form header.at-title {margin-bottom: 10px;text-align: left;}
 
-article .at.ngp-form figure.main-image {margin:0;}
+article .at.ngp-form figure.main-image {display: none;margin:0;}
 
 article .at.ngp-form header.HeaderHtml h1,
 article .at.ngp-form .content.thankYou h1 {
@@ -1449,7 +1453,11 @@ footer.theme-footer p {
 
 
 @media (min-width:400px) {
-  
+
+  /* header */
+  body.has-main-image section.header-image figure.main-image {
+    height: 300px;
+  }
   /* Toggle */
 
   article .at.ngp-form .form-item-selectedfrequency .radios {
@@ -1470,7 +1478,10 @@ footer.theme-footer p {
 
 
 @media (min-width:500px) {
-  
+  /* header */
+  body.has-main-image section.header-image figure.main-image {
+    height: 350px;
+  }
   /* Form */
 
   article .at.ngp-form header.at-title,
@@ -1558,7 +1569,10 @@ footer.theme-footer p {
   }
       
   header.theme-header section.logo-container {padding: 0;width:647px;}
-  
+ 
+ body.has-main-image section.header-image {
+  display: none;
+  }	
   figure.branding figcaption {
     font-size:1.9em;
     padding-bottom:16px;
