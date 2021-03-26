@@ -73,7 +73,7 @@ figure.branding figcaption {
   font-size:1.375em;
   line-height: 1.15em;
   padding:0 0 20px;
-  text-align: center;
+  text-align: left;
 }
 
 
@@ -1610,6 +1610,7 @@ background-image: none;
   figure.branding figcaption {
     font-size:1.9em;
     padding-bottom:16px;
+    text-align: center;
   }
  
   main article {
