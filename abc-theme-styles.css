@@ -28,6 +28,7 @@ main {
 .green {color:#4e5b31;}
 .gold {color:#DC6B2F;}
 
+figure,
 figure img {
   max-width:100%;
 }
