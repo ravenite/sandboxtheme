@@ -360,6 +360,14 @@ article .at.ngp-form fieldset.RecipientInformation + fieldset.ContactInformation
 article .at.ngp-form fieldset.ContactInformation + fieldset.PaymentInformation,
 article .at.ngp-form fieldset.PaymentInformation + fieldset.AdditionalInformation:not(.hide-additional-information) {margin-top:25px;}
 
+article .at.ngp-form div.updateMyProfileSection span.text {
+    font-size: 16px;
+}
+article .at.ngp-form .form-unit.form-unit-radio.form-item-premiumgift label {
+    font-size: 16px;
+    line-height: 18px;
+}
+
 article .at.ngp-form legend.at-legend {
   border-top:0;
   font-size:24px;
@@ -378,7 +386,7 @@ article .at.ngp-form .at-row label,
 article .at.ngp-form fieldset.TicketInformation label {
   font-size:18px;
   font-weight:400;
-  line-height:20px;
+  line-height:24px;
   margin:0 10px;
 }
 
@@ -523,7 +531,7 @@ article .at.ngp-form .form-item-selectedfrequency .radio-description-value-0 {
 
 /* Checkboxes */
 
-article .at.ngp-form label.at-check {margin:5px 10px;}
+article .at.ngp-form label.at-check {margin:5px 10px;margin: 5px 10px 15px 10px;}
 article .at.ngp-form .at-recipient-msg label.at-check.NotificationSendCopy {margin:5px 0 10px;}
 
 article .at.ngp-form .at-check.YesSignMeUpForUpdatesForBinder {position:relative;}
