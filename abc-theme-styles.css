@@ -1675,7 +1675,11 @@ background-image: none;
     grid-column: 2 / 3;
     grid-row: 1 / 7;
   }
-  
+  body.contribution-theme  .at.ngp-form form footer.FooterHtml {
+  grid-column: 2 / 3;
+  grid-row: 7 / 8;
+  }
+	
   /* CTA */ 
   .cta-section.row {
     display: flex;
