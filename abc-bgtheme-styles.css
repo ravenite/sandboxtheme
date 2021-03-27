@@ -380,19 +380,22 @@ article .at.ngp-form fieldset.Premiums .at-gifts {
   flex-wrap: wrap;
 }
 article .at.ngp-form fieldset.Premiums .at-gift {
-  flex-basis: 50%;
+  flex-basis: calc(50% - 10px);
   margin: 0 0 10px;
   padding: 0 10px;
   width:50%;
 }
 fieldset.Premiums .at-gifts .at-gift .gift-img,
 fieldset.Premiums .at-gifts .at-gift .gift-img-container {
-    width: 60px;
-    height: 60px;
+  height: 60px;
+  margin: 0 0 0 10px;
+  width: 60px;
 }
 article .at.ngp-form fieldset.Premiums .at-gifts .at-gift .description {
-    margin: 0;
-    padding: 0 0 0 5px;
+  margin: 0;
+  max-width: calc(100% - 60px);
+  padding: 0 5px;
+  width: 100%;
 }
 article .at.ngp-form div.updateMyProfileSection span.text {
     font-size: 16px;
@@ -1575,9 +1578,22 @@ footer.theme-footer p {
 
 
 @media (max-width:767px) {
-body.image-mobile-hide figure.main-image {
-  display: none !important;
-}
+  main {
+    background-image:none !important;  
+  }
+  header.theme-header figure.branding img {
+    visibility: hidden;
+  }
+  figure.branding a {
+    background-image: url(https://nvlupin.blob.core.windows.net/images/van/ABCON/ABCON/1/88500/images/SANDBOX/themes/abc-logo.svg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 200px;
+  }
+
+  body.image-mobile-hide figure.main-image {
+    display: none !important;
+  }
   /* Read More Option */
 
   body.form-layout-read_more article .at.ngp-form header.HeaderHtml > *,
@@ -1744,11 +1760,13 @@ body.image-mobile-hide figure.main-image {
     font-weight:500;
     line-height:1.25em;
   }
-
 }
-@media (min-width:768px) and @media (max-width:960px) {
+
+@media (min-width:768px) and (max-width:960px) {
   body article .at.ngp-form fieldset.ContributionInformation label.label-amount.incrediblyLong {
-      width: 100% !important;
+    line-height: 50px;
+    padding: 0;
+    width: 100% !important;
   }
 }
 
