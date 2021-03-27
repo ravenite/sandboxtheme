@@ -407,10 +407,16 @@ article .at.ngp-form .form-unit.form-unit-radio.form-item-premiumgift label {
   padding: 0 10px 0 0;
 }
 
-
-
-.at-fieldset.ShippingInformation .at-shipping-destinations label {
-    line-height: 44px !important;
+article .at.ngp-form .at-fieldset.ShippingInformation .at-shipping-destinations {
+  align-content: center;display: flex;
+}
+article .at.ngp-form .at-fieldset.ShippingInformation .at-shipping-destinations label {
+  display: flex;
+  justify-content: center;
+  height: 44px;
+  line-height: 44px !important;
+  margin: 0;
+  width: 50%;
 }
 
 article .at.ngp-form legend.at-legend {
@@ -1141,6 +1147,8 @@ article.has-ecard figure.ecard-image-container img {
 }
 
 article.has-ecard .ecards-container:first-of-type {border:0;}
+
+.at-ecards.clearfix {display: block;}
 
 article.has-ecard .ecards-container {
   border-bottom:1px solid #d9d9d9;
