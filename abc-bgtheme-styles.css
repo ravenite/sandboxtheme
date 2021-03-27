@@ -308,7 +308,7 @@ article .at.ngp-form figure.progress-meter p.progress-meter-details span {
 /* Form Steps */
 
 article .at.ngp-form ol.at-steps {
-  background:#f8f8f8;
+  background: transparent;
   border-radius:0;
   display:flex;
   margin:20px 0 0;
