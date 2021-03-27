@@ -1148,7 +1148,7 @@ article.has-ecard figure.ecard-image-container img {
 
 article.has-ecard .ecards-container:first-of-type {border:0;}
 
-.at-ecards.clearfix {display: block;}
+.at-ecards.clearfix {display: block !important;}
 
 article.has-ecard .ecards-container {
   border-bottom:1px solid #d9d9d9;
