@@ -1219,7 +1219,7 @@ article.has-ecard .at.ngp-form .at-recipient-msg {
 
 article.has-ecard .at.ngp-form .at-recipient-msg label.at-area {order:1;}
 article.has-ecard .at.ngp-form .at-recipient-msg label.at-date {order:2;}
-article.has-ecard .at.ngp-form .at-recipient-msg label.fa-calendar-alt {margin: 0 0 10px 0;position:relative;}
+article.has-ecard .at.ngp-form .at-recipient-msg label.fa-calendar-alt {margin: 0 0 10px 0;exaposition:relative;}
 
 article.has-ecard .at.ngp-form .at-recipient-msg label.fa-calendar-alt:before {
   bottom:10px;
@@ -1598,10 +1598,10 @@ footer.theme-footer p {
     background-repeat: no-repeat;
     width: 200px;
   }
+  body.image-mobile-hide figure.main-imag {display: none !important;}
 
-  body.image-mobile-hide figure.main-image {
-    display: none !important;
-  }
+  body.has-main-image section.at-inner figure.main-image {display: none !important;}
+  
   /* Read More Option */
 
   body.form-layout-read_more article .at.ngp-form header.HeaderHtml > *,
