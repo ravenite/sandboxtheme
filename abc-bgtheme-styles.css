@@ -1219,7 +1219,7 @@ article.has-ecard .at.ngp-form .at-recipient-msg {
 
 article.has-ecard .at.ngp-form .at-recipient-msg label.at-area {order:1;}
 article.has-ecard .at.ngp-form .at-recipient-msg label.at-date {order:2;}
-article.has-ecard .at.ngp-form .at-recipient-msg label.fa-calendar-alt {position:relative;}
+article.has-ecard .at.ngp-form .at-recipient-msg label.fa-calendar-alt {margin: 0 0 10px 0;position:relative;}
 
 article.has-ecard .at.ngp-form .at-recipient-msg label.fa-calendar-alt:before {
   bottom:10px;
