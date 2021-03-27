@@ -1598,7 +1598,7 @@ footer.theme-footer p {
     background-repeat: no-repeat;
     width: 200px;
   }
-  body.image-mobile-hide figure.main-imag {display: none !important;}
+  body.image-mobile-hide figure.main-image {display: none !important;}
 
   body.has-main-image section.at-inner figure.main-image {display: none !important;}
   
