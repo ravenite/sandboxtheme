@@ -1746,6 +1746,11 @@ body.image-mobile-hide figure.main-image {
   }
 
 }
+@media (min-width:768px) and @media (max-width:960px) {
+  body article .at.ngp-form fieldset.ContributionInformation label.label-amount.incrediblyLong {
+      width: 100% !important;
+  }
+}
 
 
 @media (min-width:960px) {
