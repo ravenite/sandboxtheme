@@ -1148,7 +1148,7 @@ article.has-ecard figure.ecard-image-container img {
 
 article.has-ecard .ecards-container:first-of-type {border:0;}
 
-.at-ecards.clearfix {display: block !important;}
+
 
 article.has-ecard .ecards-container {
   border-bottom:1px solid #d9d9d9;
@@ -1170,15 +1170,12 @@ article.has-ecard .ecards-container .at-ecards {
 article.has-ecard .at.ngp-form .ecards-container .at-ecard {
   border:5px solid #fff;
   border-radius:0;
-  display:block;
   height:unset;
   margin:5px;
   width:calc((100%/3) - 10px) !important;
 }
+.at-ecards.clearfix {display: block !important;}
 
-.at-ecards.clearfix {
-  display:block;
-}
 article.has-ecard .at.ngp-form .ecards-container .at-ecard.selected {
   border:5px solid #DC6B2F;
   border-radius:0;
