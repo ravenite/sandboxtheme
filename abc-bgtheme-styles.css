@@ -251,7 +251,7 @@ article .at.ngp-form .content.thankYou a:hover {text-decoration:underline;}
 
 article .at.ngp-form .content.thankYou button.btn-social {
   color:#fff;
-  font-weight:500;
+  font-weight:600;
   margin:0 15px 0 0;
 }
 
@@ -473,7 +473,7 @@ article .at.ngp-form fieldset.TicketInformation label {
   margin:0 10px;
 }
 
-article .at.ngp-form .AdditionalInformation .at-row label {font-weight:500;}
+article .at.ngp-form .AdditionalInformation .at-row label {font-weight:600;}
 
 article .at.ngp-form fieldset.TicketInformation label {margin:0;}
 
@@ -484,7 +484,7 @@ article .at.ngp-form .at-row label textarea,
 article .at.ngp-form .at-row label .vgs-input-container iframe {
   border:1px solid #999;
   border-radius:0;
-  font-weight:500;
+  font-weight:600;
   font-size:16px;
   height:44px;
   line-height:44px;
@@ -506,7 +506,7 @@ article .at.ngp-form .at-recurring label select {
 
 article .at.ngp-form .at-row label .select2-selection {
   color:#000;
-  font-weight:500;
+  font-weight:600;
   padding-top:10px;
   text-transform:none;
 }
@@ -932,6 +932,7 @@ article .at.ngp-form fieldset.ContributionInformation label.label-otheramount in
   line-height: 29px;
 }
 article .at.ngp-form fieldset.ContributionInformation label.label-otheramount .error {
+  color: #fa5252;
   display:block;
   font-size:14px;
   line-height:18px;
@@ -1306,7 +1307,7 @@ article .at.ngp-form .at-row label a.at-whatsthis {line-height:20px;}
 
 article .at.ngp-form label small.error {
   font-size:14px;
-  font-weight:500;
+  font-weight:600;
   line-height:20px;
   margin-bottom:10px;
   padding:0;
@@ -1354,7 +1355,7 @@ article .at.ngp-form label small.error {
 
 .lightbox-modal.at-modal footer a.lightbox-decline-button {
   color:#DC6B2F;
-  font-weight:500;
+  font-weight:600;
 }
 
 
@@ -1668,7 +1669,7 @@ footer.theme-footer p {
 
   body.form-layout-read_more article .at.ngp-form header.HeaderHtml > span.show-full-body {
     color:#DC6B2F;
-    font-weight:500;
+    font-weight:600;
   }
 
   article .at.ngp-form fieldset.at-fieldset.RecipientInformation {
@@ -1828,7 +1829,7 @@ footer.theme-footer p {
   footer.theme-footer ul.footer-menu ul a {
     display:block;
     font-size:.75em;
-    font-weight:500;
+    font-weight:600;
     line-height:1.25em;
   }
 }
