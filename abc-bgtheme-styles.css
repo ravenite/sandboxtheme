@@ -1,5 +1,22 @@
 * {box-sizing:border-box;}
 
+@font-face {
+    font-family: 'HK Grotesk';
+    src: url('https://nvlupin.blob.core.windows.net/images/van/ABCON/ABCON/1/88500/images/SANDBOX/themes/fonts/HKGrotesk-Regular.woff2') format('woff2'),
+        url('https://nvlupin.blob.core.windows.net/images/van/ABCON/ABCON/1/88500/images/SANDBOX/themes/fonts/HKGrotesk-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'HK Grotesk';
+    src: url('https://nvlupin.blob.core.windows.net/images/van/ABCON/ABCON/1/88500/images/SANDBOX/themes/fonts/HKGrotesk-SemiBold.woff2') format('woff2'),
+        url('https://nvlupin.blob.core.windows.net/images/van/ABCON/ABCON/1/88500/images/SANDBOX/themes/fonts/HKGrotesk-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* Body */
 
 body {
