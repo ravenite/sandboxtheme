@@ -86,11 +86,13 @@ var myPostRender = function(vals) {
     getCurrentAmount();
     });
     // giving this Select treament to Gifts as well
-    $(".at.ngp-form .at-gift input:checked").parent("div").addClass("selected");
-    $(".at.ngp-form .at-gift input").on("click change", function(){
-      $(".at.ngp-form .at-gift div.selected").parent("div").removeClass("selected");
-    });
-
+    $( ".at.ngp-form .at-gift input" ).toggle(
+      function() {
+        $( this ).addClass( "selected" );
+      }, function() {
+        $( this ).removeClass( "selected" );
+      }
+    );
 
     // Check to see if the Progress Meter exists. If it does, replace the iframe's meter with constructed progress meter.
     if ( $("article .at.ngp-form header.MeterHtml").length ) {
