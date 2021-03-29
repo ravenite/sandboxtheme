@@ -394,25 +394,25 @@ article .at.ngp-form fieldset.Premiums .at-gifts {
   display: flex;
   flex-wrap: wrap;
 }
-
 article .at.ngp-form fieldset.Premiums .at-gift {
-    margin: 9px;
-    padding: 0;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 9px;
+  padding: 0;
+  position: relative;
 }
-
 article .at.ngp-form .at-gift input[type="radio"] {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    border: 1px solid #aaa;
-    border-radius: 50%;
-    content: "";
-    display: block;
-    height: 24px;
-    margin: 21.1px 0 0 0;
-    padding: 0;
-    outline: none;
-    width: 24px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 24px;
+  margin: 21.1px 0 0 0;
+  padding: 0;
+  outline: none;
+  width: 24px;
 }
 article .at.ngp-form .at-gift input[type="radio"]:checked {
     background-color: #DC6B2F;
