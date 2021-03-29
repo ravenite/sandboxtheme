@@ -514,6 +514,7 @@ article .at.ngp-form .at-row label .select2-selection {
 article .at.ngp-form .at-row label .select2-selection__rendered {color:#000;}
 
 article .at.ngp-form .at-row label textarea {
+  font-weight: 400;
   height:auto;
   line-height:1.5em;
   min-height:100px;
