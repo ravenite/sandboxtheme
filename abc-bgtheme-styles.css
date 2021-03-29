@@ -397,7 +397,7 @@ article .at.ngp-form fieldset.Premiums .at-gifts {
 article .at.ngp-form fieldset.Premiums .at-gift {
   display: flex;
   justify-content: space-between;
-  margin: 9px;
+  margin: 9px 9px 20px;
   padding: 0;
   position: relative;
 }
@@ -1576,12 +1576,6 @@ footer.theme-footer p {
   body.has-main-image section.header-image figure.main-image {
     height: 350px;
   }
-  /* gifts */
-  article .at.ngp-form fieldset.Premiums .at-gift {
-    flex-basis: calc(50% - 18px);
-    width: calc(50% - 18px);
-  }
-
   body article .at.ngp-form fieldset.ContributionInformation label.label-amount.incrediblyLong {
     flex-basis: calc(50% - 18px) !important;
     width: calc(50% - 18px) !important;
@@ -1620,21 +1614,12 @@ footer.theme-footer p {
 
   article .at.ngp-form fieldset.PaymentInformation .at-eft-accepted-here > label {width:calc(50% - 20px);}
   
-  
   /* Footer */
   .validation-logos figure.validation-logo {
     flex-basis: unset;
     width: unset;
   }
   
-}
-
-@media (min-width:500px) and (max-width:959px) {
-  body article .at.ngp-form fieldset.Premiums .at-gift {
-    flex-basis: 100%;
-    margin: 9px 9px 20px;
-    width: 100%;
-  }
 }
 
 
@@ -1658,6 +1643,12 @@ footer.theme-footer p {
   article .at.ngp-form .content.thankYou h1.large {
     font-size:2em;
     line-height:1.25em;
+  }
+  /* gifts */
+  article .at.ngp-form fieldset.Premiums .at-gift {
+    margin:9px;
+    flex-basis: calc(50% - 18px);
+    width: calc(50% - 18px);
   }
 }
 
