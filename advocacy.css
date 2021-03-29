@@ -1,0 +1,109 @@
+/* Advocacy */
+
+body.advocacy header.title {
+	background-color: #DC6B2F;
+}
+body.advocacy .at.ngp-form header.at-title {
+	display:none;
+}
+body.advocacy header.theme-header section.logo-container {
+	margin: 0 auto;
+	max-width: 1020px;
+	padding: 0;
+	width: 1020px;
+	width: 100%;
+}
+body.advocacy header.theme-header figure.branding a {
+	margin: 0;
+    padding: 30px 0;
+}
+body.advocacy header.title h1 {
+	align-items: center;
+	color:white;
+	display: flex;
+	font-size: 24px;
+	line-height: 27px;
+	min-height: 50px;
+	margin: 0 auto;
+	max-width: 642px;
+	max-width: 1060px;
+	padding: 10px 20px;
+	text-align: left;
+	width: 100%;
+}
+body.advocacy main {
+	background-color: #fff;
+}
+body.advocacy main article {
+	padding:0;
+}
+body.advocacy main article section.article-content {
+	box-shadow:none;
+	padding:20px 0 25px 0;
+}
+body.advocacy article .at.ngp-form .at-fields {
+	margin-bottom: 25px;
+}
+
+
+
+body.advocacy article .at.ngp-form .at-legend.clearfix.at-legend-with-submit {
+	color: white;
+	font-size: 5px;
+	line-height: 30px;
+	text-transform: capitalize;
+    width: 100%;
+}
+body.advocacy article .at.ngp-form .at-legend.clearfix.at-legend-with-submit input.at-submit {
+    margin: 0 -10px 20px -10px;
+    width: 100%;
+}
+body.advocacy article .at.ngp-form .at-form-submit {
+    justify-content: flex-end;
+}
+body.advocacy fieldset.AdvocacyFields .at-fields {
+    background: #ECEBEB;
+    padding: 30px 10px;
+}
+body.advocacy fieldset.AdvocacyFields .at-fields::before {
+    display: block;
+    content: "Message Recipients";
+    padding: 0 10px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    color: #676767;
+}
+body.advocacy  .at-targets.clearfix {
+    background-color: transparent;
+    padding: 0;
+}
+body.advocacy  article .at.ngp-form .at-row label textarea {
+	font-size:18px;
+	line-height: 1.75em;
+	padding: 20px 22px;
+}
+body.advocacy  .at-row.at-row-full.Message0 label textarea {
+	margin-top: 15px;
+}
+body.advocacy article .at.ngp-form .at-form-submit .at-submit {
+	margin:0;
+}
+body.advocacy article .at.ngp-form .at-markup.Outro0 {
+    margin-bottom: 10px;
+}
+
+@media (max-width:767px) {
+	body.advocacy article .at.ngp-form ol.at-steps {
+	    margin: 0;
+	}
+}
+
+@media (min-width:768px) {
+	body.advocacy main article section.article-content {
+	    padding: 20px 0 45px 0;
+	}
+}
+
+
+
+
