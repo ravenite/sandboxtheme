@@ -1,5 +1,4 @@
 /* Advocacy */
-
 body.advocacy header.title {
 	background-color: #DC6B2F;
 }
@@ -44,9 +43,6 @@ body.advocacy main article section.article-content {
 body.advocacy article .at.ngp-form .at-fields {
 	margin-bottom: 25px;
 }
-
-
-
 body.advocacy article .at.ngp-form .at-legend.clearfix.at-legend-with-submit {
 	color: white;
 	font-size: 5px;

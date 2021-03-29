@@ -1210,8 +1210,6 @@ article.has-ecard figure.ecard-image-container img {
 
 article.has-ecard .ecards-container:first-of-type {border:0;}
 
-
-
 article.has-ecard .ecards-container {
   border-bottom:1px solid #d9d9d9;
   margin:0 0 5px;
@@ -1225,7 +1223,7 @@ article.has-ecard .ecards-container .at-title {
 article.has-ecard .ecards-container .at-ecards {
   display:flex;
   flex-wrap:wrap;
-  margin:0 -10px;
+  margin:0 -5px;
   width:auto;
 }
 
@@ -1265,7 +1263,7 @@ article.has-ecard .at.ngp-form .ecards-container .at-ecards button.at-preview-ec
   color:#fff;
   font-weight:700;
   height:50px;
-  margin:10px;
+  margin:5px;
 }
 
 article.has-ecard .at.ngp-form fieldset.RecipientInformation .at-recipient-info .at-title {margin-top:0;}
