@@ -76,7 +76,22 @@ var myPostRender = function(vals) {
 
     } // End of if statement for Contribution logic    
 
-    
+    // When the form is loaded or the toggle is clicked, make sure the chosen option has the "selected" class so you can apply the necessary CSS
+    /// Also, run the getCurrentAmount function to recalculate the explainer
+    $(".at.ngp-form .form-item-selectedfrequency .radios label input:checked").closest("label").addClass("selected");
+    $(".at.ngp-form .form-item-selectedfrequency .radios label input").change(function() {
+    $(".at.ngp-form .form-item-selectedfrequency .radios label.selected").closest("label").removeClass("selected");
+    $(this).closest("label").addClass("selected");
+    isOtherAmount = "false"; // unset this value if the toggle changes; it'll otherwise cause complications with the calculation
+    getCurrentAmount();
+    });
+    // giving this Select treament to Gifts as well
+    $(".at.ngp-form .at-gift input:checked").parent("div").addClass("selected");
+    $(".at.ngp-form .at-gift input").on("click change", function(){
+      $(".at.ngp-form .at-gift div.selected").parent("div").removeClass("selected");
+    });
+
+
     // Check to see if the Progress Meter exists. If it does, replace the iframe's meter with constructed progress meter.
     if ( $("article .at.ngp-form header.MeterHtml").length ) {
       
