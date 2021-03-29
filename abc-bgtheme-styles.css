@@ -1792,7 +1792,10 @@ footer.theme-footer p {
   }
 	
   /* CTA */ 
-  .cta-section.row {
+  .cta-section {
+    background-color: #f5f5f5; 
+  }
+  .cta-section .row {
     display: flex;
     flex-wrap:wrap;
     max-width: 750px;
@@ -1884,7 +1887,7 @@ footer.theme-footer p {
     min-width:175px;
   }
   /* CTA */
-  .cta-section.row {
+  .cta-section .row {
     max-width: 960px;
   }
   .cta-item {
@@ -1900,7 +1903,7 @@ footer.theme-footer p {
     font-size: 1.9em;
   }
   /* CTA */
-  .cta-section.row {
+  .cta-section .row {
     max-width: 1170px;
   }
   body.columns-two main article {
