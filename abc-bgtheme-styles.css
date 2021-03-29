@@ -44,7 +44,9 @@ main {
 main article {
   padding:0;
 }
-
+a:hover {
+  opacity: .85;
+}
 
 .green {color:#4e5b31;}
 .gold {color:#DC6B2F;}
@@ -95,7 +97,7 @@ figure.branding figcaption {
   font-size:1.375em;
   line-height: 1.15em;
   padding:0 0 20px;
-  text-align: left;
+  text-align: center;
   text-shadow: 2px 2px 40px #777;
 }
 
@@ -1264,7 +1266,7 @@ article.has-ecard .at.ngp-form fieldset.RecipientInformation .at-recipient-info 
 article.has-ecard .at.ngp-form .at-recipient-msg {
   display:flex;
   flex-direction:column;
-  margin-bottom:25px;
+  margin-bottom:5px;
 }
 
 article.has-ecard .at.ngp-form .at-recipient-msg label.at-area {order:1;}
@@ -1361,7 +1363,10 @@ article .at.ngp-form label small.error {
 
 
 /* CTA */
-.cta-section.row {
+.cta-section {
+  background-color: #f5f5f5; 
+}
+.cta-section .row {
   margin: 0 auto;
   padding:63px 0;
 }
@@ -1673,6 +1678,10 @@ footer.theme-footer p {
     font-weight:600;
   }
 
+
+  article .at.ngp-form ol.at-steps {
+    padding: 0 20px 0;
+  }
   article .at.ngp-form fieldset.at-fieldset.RecipientInformation {
     padding-top: .5em !important;
   }
@@ -1702,7 +1711,6 @@ footer.theme-footer p {
   figure.branding figcaption {
     font-size:1.9em;
     padding-bottom:16px;
-    text-align: center;
   }
  
   main article {
@@ -1792,9 +1800,6 @@ footer.theme-footer p {
   }
 	
   /* CTA */ 
-  .cta-section {
-    background-color: #f5f5f5; 
-  }
   .cta-section .row {
     display: flex;
     flex-wrap:wrap;
