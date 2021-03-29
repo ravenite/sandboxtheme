@@ -421,17 +421,18 @@ article .at.ngp-form .at-gift input[type="radio"]:checked {
 
 fieldset.Premiums .at-gifts .at-gift .gift-img-container {
   margin: 0 0 0 10px;
-  width: 70px;
+  height: 80px;
+  width: 80px;
 }
 fieldset.Premiums .at-gifts .at-gift .gift-img {
-  height: 70px;
+  height: 100%;
   margin: 0 0 0 -1px;
-  width: 70px;
+  width: 100%;
 }
 article .at.ngp-form fieldset.Premiums .at-gifts .at-gift .description {
   margin: 0;
-  max-width: calc(100% - 104px);
-  padding: 0 10px 0 5px;
+  max-width: calc(100% - 114px);
+  padding: 0 5px;
   width: 100%;
 }
 article .at.ngp-form div.updateMyProfileSection span.text {
