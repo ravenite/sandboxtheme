@@ -395,6 +395,7 @@ article .at.ngp-form fieldset.Premiums .at-gifts {
   flex-wrap: wrap;
 }
 article .at.ngp-form fieldset.Premiums .at-gift {
+  align-items: center;
   display: flex;
   justify-content: space-between;
   margin: 9px 9px 20px;
@@ -409,7 +410,7 @@ article .at.ngp-form .at-gift input[type="radio"] {
   content: "";
   display: block;
   height: 24px;
-  margin: 28px 0 0 0;
+  margin: 0;
   padding: 0;
   outline: none;
   width: 24px;
