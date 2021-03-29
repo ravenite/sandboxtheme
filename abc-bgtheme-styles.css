@@ -393,7 +393,6 @@ article .at.ngp-form fieldset.Premiums .at-gifts {
   flex-wrap: wrap;
 }
 
-
 article .at.ngp-form fieldset.Premiums .at-gift {
     margin: 9px;
     padding: 0;
@@ -408,7 +407,6 @@ article .at.ngp-form fieldset.Premiums .at-gift {
     top: 0;
     width: 1px !important;
     margin: 0 !important;
-
     height: 100% !important;
     width: 100% !important;
 }
@@ -417,7 +415,9 @@ article .at.ngp-form fieldset.Premiums .at-gift {
     background: #e9e9e9;
 }
 
-fieldset.Premiums .at-gifts .at-gift .gift-img-container {}
+fieldset.Premiums .at-gifts .at-gift .gift-img-container {
+  margin: 0;
+}
 fieldset.Premiums .at-gifts .at-gift .gift-img {
   height: 70px;
   margin: 0 0 0 -1px;
@@ -426,7 +426,7 @@ fieldset.Premiums .at-gifts .at-gift .gift-img {
 article .at.ngp-form fieldset.Premiums .at-gifts .at-gift .description {
   margin: 0;
   max-width: calc(100% - 60px);
-  padding: 0 10px;
+  padding: 0 10px 0 5px;
   width: 100%;
 }
 article .at.ngp-form div.updateMyProfileSection span.text {
@@ -857,7 +857,7 @@ article .at.ngp-form .at-form-submit .step-prevNext .btn-at {
   padding:6px 20px;
 }
 
-article .at.ngp-form .at-form-submit .step-prevNext .prev .btn-at {background:#999;line-height: 50px;}
+article .at.ngp-form .at-form-submit .step-prevNext .prev .btn-at {background:#999;line-height: 24px;}
 
 article .at.ngp-form .at-form-submit .back-link.at-submit {
   background-color:#ccc;
@@ -1121,11 +1121,20 @@ body.contribution-theme footer.FooterHtml {
 }
 .validation-logos {
   display:flex;
+  flex-wrap:wrap;
   justify-content:center;
 }
 
 article .validation-logos {margin: 20px 0 30px;}
-.validation-logos figure.validation-logo {line-height: 0;margin:unset;padding: 0 15px;}
+.validation-logos figure.validation-logo {
+    flex-basis: 50%;
+    line-height: 0;
+    margin:unset;
+    margin-bottom: 15px;
+    padding: 0 15px;
+    text-align: center;
+    width: 50%;
+}
 
 .validation-logos figure.validation-logo a {
   display:block;
@@ -1448,8 +1457,7 @@ footer.theme-footer p strong {
 
 footer.theme-footer .secondary-content {
   margin: 0 auto;
-  padding:50px 20px 0 0;
-  width:calc(100% - 200px);
+  padding:40px 20px;
 }
 
 footer.theme-footer ul.footer-menu {
@@ -1600,10 +1608,9 @@ footer.theme-footer p {
   
   
   /* Footer */
-  
-  footer.theme-footer figure.rcan-logo a img {
-    height:39px;
-    width:371px;
+  .validation-logos figure.validation-logo {
+    flex-basis: unset;
+    width: unset;
   }
   
 }
@@ -1630,8 +1637,6 @@ footer.theme-footer p {
     font-size:2em;
     line-height:1.25em;
   }
-  
-
 }
 
 
@@ -1665,6 +1670,11 @@ footer.theme-footer p {
     color:#DC6B2F;
     font-weight:500;
   }
+
+  article .at.ngp-form fieldset.at-fieldset.RecipientInformation {
+    padding-top: .5em !important;
+  }
+
   /* Footer */
 
   footer.theme-footer ul.footer-menu ul {display:none;}
@@ -1790,7 +1800,10 @@ footer.theme-footer p {
   }
   
   /* Footer */
-  
+ footer.theme-footer .secondary-content {
+    padding: 50px 20px 0 0;
+    width: calc(100% - 200px);
+  }
   footer.theme-footer ul.footer-menu {
     display:flex;
     justify-content:space-between;
