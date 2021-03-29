@@ -409,7 +409,7 @@ article .at.ngp-form .at-gift input[type="radio"] {
   content: "";
   display: block;
   height: 24px;
-  margin: 21.1px 0 0 0;
+  margin: 28px 0 0 0;
   padding: 0;
   outline: none;
   width: 24px;
@@ -430,6 +430,9 @@ fieldset.Premiums .at-gifts .at-gift .gift-img {
   width: 100%;
 }
 article .at.ngp-form fieldset.Premiums .at-gifts .at-gift .description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   margin: 0;
   max-width: calc(100% - 114px);
   padding: 0 5px;
@@ -1624,6 +1627,14 @@ footer.theme-footer p {
     width: unset;
   }
   
+}
+
+@media (min-width:500px) and (max-width:959px) {
+  body article .at.ngp-form fieldset.Premiums .at-gift {
+    flex-basis: 100%;
+    margin: 9px 9px 20px;
+    width: 100%;
+  }
 }
 
 
