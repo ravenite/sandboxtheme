@@ -1847,10 +1847,15 @@ footer.theme-footer p {
   }
 }
 
-@media (min-width:768px) and (max-width:960px) {
+@media (min-width:768px) and (max-width:959px) {
   body article .at.ngp-form fieldset.ContributionInformation label.label-amount.incrediblyLong {
     flex-basis: 100% !important;
     width: 100% !important;
+  }
+  article .at.ngp-form fieldset.Premiums .at-gift {
+    flex-basis: 100%;
+    margin: 9px 9px 20px;
+    width: 100%;
   }
 }
 
