@@ -1152,6 +1152,22 @@ article .at.ngp-form fieldset.AdditionalInformation div.other-option label.at-te
 
 article .at.ngp-form .at-fields.interests-fields {margin:0;}
 
+fieldset.ContactInformation  fieldset.at-fieldset.Interests.hideStep {
+  display:block !important;
+  height: auto;
+  margin:0;
+  position: relative;
+  visibility: visible;
+  z-index: 2;
+}
+fieldset.ContactInformation  fieldset.at-fieldset.Interests.hideStep,
+fieldset.ContactInformation  fieldset.at-fieldset.Interests.hideStep .at-markup.InterestsHeaderHtml {
+   margin:0; 
+}
+fieldset.ContactInformation  fieldset.at-fieldset.Interests.hideStep .at-fields div > label {
+  margin:5px 0;
+}
+
 article .at.ngp-form footer.FooterHtml {padding:10px 20px 0;}
 article .at.ngp-form.multistep-layout .at-form-submit footer.FooterHtml {padding:10px;}
 

@@ -44,6 +44,9 @@ var myPostRender = function(vals) {
       $('article .at.ngp-form fieldset.AdditionalInformation').addClass('hide-additional-information');
   }
 
+  // Move interests to second step
+  $("fieldset.at-fieldset.Interests").appendTo("fieldset.ContactInformation div.at-fields").removeClass("hideStep");
+
   // Move the main image down on header image themed forms
   // For Header Image forms with a main image option, clone the main image (which gets store in the .article-header for later placement) into the actual form part  
   $("body.has-main-image article figure.main-image").clone().prependTo("body.has-main-image article section.at-inner"); 
