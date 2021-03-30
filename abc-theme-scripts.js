@@ -46,9 +46,10 @@ var myPostRender = function(vals) {
       if (recurringObject.name === "IsRecurring" && recurringObject.type === "hidden" && recurringObject.value === true) {
           $("article .at.ngp-form .ContributionInformation").addClass("forced-recurring");
         } else {};
-    } catch {}
-  
-      
+    } catch {}  
+      // Add disclaimer
+      $('<div class="at-row"><div class="at-markup donatesecurely"><label style="display:inline;"><input type="checkbox" name="updateMyProfile" checked="checked"><span><span class="text">Your Donation will be securely processed.</span></span></label></div></div>').appendTo('fieldset.PaymentInformation .at-fields');
+
       // Check to see if an Ecard exists. If it does, move it around per the design      
       if ( $("article .at.ngp-form fieldset.RecipientInformation .at-row.Ecard").length ) {
       

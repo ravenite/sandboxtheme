@@ -640,7 +640,12 @@ article .at.ngp-form .at-row.UpdateMyProfile {margin:5px 0;}
 article .at.ngp-form .updateMyProfileSection > label {margin:0;}
 
 
-
+article .at.ngp-form .donatesecurely {
+  margin-top: 10px;
+}
+article .at.ngp-form .donatesecurely span.text {
+  font-size: 16px;
+}
 article .at.ngp-form  .donatesecurely label > span::before,
 article .at.ngp-form  .donatesecurely label > span::after,
 article .at.ngp-form label.at-check .at-checkbox-title-container:before,
