@@ -639,6 +639,10 @@ article .at.ngp-form .at-check.YesSignMeUpForUpdatesForBinder {position:relative
 article .at.ngp-form .at-row.UpdateMyProfile {margin:5px 0;}
 article .at.ngp-form .updateMyProfileSection > label {margin:0;}
 
+
+
+article .at.ngp-form  .donatesecurely label > span::before,
+article .at.ngp-form  .donatesecurely label > span::after,
 article .at.ngp-form label.at-check .at-checkbox-title-container:before,
 article .at.ngp-form label.at-check .at-checkbox-title-container:after,
 article .at.ngp-form .UpdateMyProfile label > span:before,
@@ -652,11 +656,12 @@ article .at.ngp-form label.at-check.authorize-payment-label > span:after {
   top:0;
   width:24px;
 }
-
+article .at.ngp-form  .donatesecurely label > span::before,
 article .at.ngp-form label.at-check .at-checkbox-title-container:before,
 article .at.ngp-form .UpdateMyProfile label > span:before,
 article .at.ngp-form label.at-check.authorize-payment-label > span:before {background:none;}
 
+article .at.ngp-form  .donatesecurely label > span::after,
 article .at.ngp-form label.at-check .at-checkbox-title-container:after,
 article .at.ngp-form .UpdateMyProfile label > span:after,
 article .at.ngp-form label.at-check.authorize-payment-label > span:after {
@@ -671,7 +676,7 @@ article .at.ngp-form label.at-check.authorize-payment-label > span:after {
   line-height:12px;
   text-align:center;
 }
-
+article .at.ngp-form  .donatesecurely label > span,
 article .at.ngp-form label.at-check .at-checkbox-title-container,
 article .at.ngp-form .UpdateMyProfile label > span,
 article .at.ngp-form fieldset.ContributionInformation label.at-select.SelectedFrequency span.at-select,
@@ -683,6 +688,12 @@ article .at.ngp-form label.at-check.authorize-payment-label > span {
   padding-left:32px;
   text-transform:none;
 }
+
+.donatesecurely label span.text::after {
+    content: '\01F512';
+}
+
+
 
 article .at.ngp-form fieldset.ContributionInformation label.at-select.SelectedFrequency span.at-select {padding-left:0;}
 
