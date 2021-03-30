@@ -426,7 +426,7 @@ article .at.ngp-form .at-gift input[type="radio"] {
   border: 1px solid #aaa;
   border-radius: 50%;
   content: "";
-  display: block;
+  display: block !important;
   height: 24px;
   margin: 0;
   padding: 0;
