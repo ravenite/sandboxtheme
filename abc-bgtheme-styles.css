@@ -217,6 +217,19 @@ article .at.ngp-form header.HeaderHtml p {
   margin:0 0 15px;
   padding:0;
 }
+article .at.ngp-form header.HeaderHtml blockquote {
+  background: #e7e7e7;
+  border: 1px solid #ddd;
+  margin: 0 0 15px 0;
+  padding: 20px;
+}
+article .at.ngp-form header.HeaderHtml blockquote h2,
+article .at.ngp-form header.HeaderHtml blockquote h3 {
+  color: #DC6B2F;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 0 20px 0;
+}
 
 article .at.ngp-form header.HeaderHtml .gold {color:#DC6B2F;}
 article .at.ngp-form header.HeaderHtml p:last-child {margin:0;}
@@ -646,8 +659,7 @@ article .at.ngp-form .donatesecurely {
 article .at.ngp-form .donatesecurely span.text {
   font-size: 16px;
 }
-article .at.ngp-form  .donatesecurely label > span::before,
-article .at.ngp-form  .donatesecurely label > span::after,
+
 article .at.ngp-form label.at-check .at-checkbox-title-container:before,
 article .at.ngp-form label.at-check .at-checkbox-title-container:after,
 article .at.ngp-form .UpdateMyProfile label > span:before,
@@ -661,12 +673,12 @@ article .at.ngp-form label.at-check.authorize-payment-label > span:after {
   top:0;
   width:24px;
 }
-article .at.ngp-form  .donatesecurely label > span::before,
+article .at.ngp-form  .donatesecurely label > span::after,
 article .at.ngp-form label.at-check .at-checkbox-title-container:before,
 article .at.ngp-form .UpdateMyProfile label > span:before,
 article .at.ngp-form label.at-check.authorize-payment-label > span:before {background:none;}
 
-article .at.ngp-form  .donatesecurely label > span::after,
+article .at.ngp-form  .donatesecurely label > span::before,
 article .at.ngp-form label.at-check .at-checkbox-title-container:after,
 article .at.ngp-form .UpdateMyProfile label > span:after,
 article .at.ngp-form label.at-check.authorize-payment-label > span:after {
@@ -1160,7 +1172,7 @@ article .validation-logos {margin: 20px 0 30px;}
     line-height: 0;
     margin:unset;
     margin-bottom: 15px;
-    padding: 0 15px;
+    padding: 0 10px;
     text-align: center;
     width: 50%;
 }
@@ -1168,7 +1180,7 @@ article .validation-logos {margin: 20px 0 30px;}
 .validation-logos figure.validation-logo a {
   display:block;
   line-height:0;
-  padding:10px;
+  padding:0;
 }
 
 .validation-logos figure.validation-logo img {height:79px;}

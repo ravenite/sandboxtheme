@@ -45,7 +45,8 @@ var myPostRender = function(vals) {
   }
 
   // Move the main image down on header image themed forms
-  $("body.has-main-image article figure.main-image").prependTo("body.has-main-image article section.at-inner"); 
+  // For Header Image forms with a main image option, clone the main image (which gets store in the .article-header for later placement) into the actual form part  
+  $("body.has-main-image article figure.main-image").clone().prependTo("body.has-main-image article section.at-inner"); 
 
     // Contribution specific stuff
     if ($("body").hasClass("contribution-theme")){  
@@ -59,7 +60,7 @@ var myPostRender = function(vals) {
         } else {};
     } catch {}  
       // Add disclaimer
-      $('<div class="at-row"><div class="at-markup donatesecurely"><label style="display:inline;"><input type="checkbox" name="updateMyProfile" checked="checked"><span><span class="text">Your Donation will be securely processed.</span></span></label></div></div>').appendTo('fieldset.PaymentInformation .at-fields');
+      $('<div class="at-row"><div class="at-markup donatesecurely"><label style="display:inline;"><span><span class="text">Your Donation will be securely processed.</span></span></label></div></div>').appendTo('fieldset.PaymentInformation .at-fields');
 
       // Check to see if an Ecard exists. If it does, move it around per the design      
       if ( $("article .at.ngp-form fieldset.RecipientInformation .at-row.Ecard").length ) {
