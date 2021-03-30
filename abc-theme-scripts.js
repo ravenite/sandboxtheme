@@ -7,7 +7,18 @@ var myPostRender = function(vals) {
       $("footer.theme-footer .footer-container.upper").prependTo("article .at.ngp-form section.at-inner footer.FooterHtml"); // Move footer-container upper if it is a contribution form
   }
   $('.ContributionInformation > legend.at-legend').text('Gift Information');
-  
+ 
+
+  //hide the CTA lightbox
+  $( "button.remove.block" ).click(function() {
+    $('#cloak').hide();
+  });
+  //show the CTA lightbox
+  $( "a.open.modal" ).click(function() {
+    $('#cloak').show();
+    console.log("open");
+  });
+
     // Enable the "Read More" option if it's chosen in the Theme
     if ($('body.form-layout-read_more').length) {
     console.log("Read more!");
