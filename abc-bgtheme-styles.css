@@ -227,8 +227,12 @@ article .at.ngp-form header.HeaderHtml blockquote h2,
 article .at.ngp-form header.HeaderHtml blockquote h3 {
   color: #DC6B2F;
   font-size: 24px;
+}
+article .at.ngp-form header.HeaderHtml blockquote h2,
+article .at.ngp-form header.HeaderHtml blockquote h3,
+article .at.ngp-form header.HeaderHtml blockquote h4 {
   font-weight: 500;
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
 }
 
 article .at.ngp-form header.HeaderHtml .gold {color:#DC6B2F;}
