@@ -1688,7 +1688,7 @@ footer.theme-footer p {
   article .at.ngp-form ol.at-steps li.at-step b:before {margin:0 10px 0 0;}
   article .at.ngp-form .at-form-submit .step-prevNext .btn-at {padding:0 30px;}
   article .at.ngp-form fieldset.ContributionInformation label.label-amount {width:calc((100% / 3) - 18px) !important;}
-  article .at.ngp-form fieldset.ContributionInformation label.label-otheramount {width:100% !important;}
+  /***article .at.ngp-form fieldset.ContributionInformation label.label-otheramount {width:100% !important;}***/
 
   /* Custom Stuff */
   
