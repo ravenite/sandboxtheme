@@ -1537,7 +1537,7 @@ footer.theme-footer ul.system-links li {margin:0 10px;}
 footer.theme-footer ul.system-links li a,
 footer.theme-footer ul.system-links li span {
   color:#fff;
-  font-size:.875em;
+  font-size: 16px;
   line-height:1em;
   text-decoration:none;
 }
@@ -1614,17 +1614,24 @@ footer.theme-footer p {
 #cloak h2.title {
   border-bottom: 1px solid #e9eae4;
   text-align: left;
-  margin: -40px -40px 40px;
+  margin: -40px -40px 25px;
   padding: 25px 0 25px 40px;
+}
+#cloak h5 {
+  margin: 10px 0 20px 0;
 }
 #cloak .panel {
   background: #f7f7f7;
   border: 1px solid #c1c1ba;
   background: #f6f6f3;
+  clear:both;
   margin-top: 10px;
   padding: 20px;
 }
-
+#cloak .col-6 {
+  float: left;
+  width: 50%;
+}
 
 
 
