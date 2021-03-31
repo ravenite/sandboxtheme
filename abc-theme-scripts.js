@@ -49,8 +49,11 @@ var myPostRender = function(vals) {
 
   // Move the main image down on header image themed forms
   $("body.bg.has-main-image article figure.main-image").prependTo("body.bg.has-main-image article section.at-inner"); 
-  // For Header Image forms with a main image option, clone the main image (which gets store in the .article-header for later placement) into the actual form part  
-  $("body.advocacy.has-main-image article figure.main-image").clone().prependTo("body.advocacy.has-main-image article section.at-inner"); 
+  // For Header Image forms with a main image option, clone the main image (which gets store in the .article-header for later placement) into the actual form part
+  if ($('body.advocacy').length) {
+    $("article figure.main-image").clone().prependTo("article section.at-inner"); 
+    console.log("move");
+  }
 
     // Contribution specific stuff
     if ($("body").hasClass("contribution-theme")){  

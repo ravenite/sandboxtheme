@@ -46,7 +46,7 @@ body.advocacy article .at.ngp-form .at-fields {
 body.advocacy article .at.ngp-form .at-legend.clearfix.at-legend-with-submit {
 	color: white;
 	font-size: 5px;
-	line-height: 30px;
+	line-height: 5px;
 	text-transform: capitalize;
     width: 100%;
 }
@@ -96,6 +96,10 @@ body.advocacy article .at.ngp-form .at-markup.Outro0 {
 	body.advocacy article .at.ngp-form ol.at-steps {
 	    margin: 0;
 	}
+	body.advocacy .at-fieldset.AdvocacyFields {
+	    padding: 0 !important;
+	}
+
 }
 
 @media (min-width:768px) {
