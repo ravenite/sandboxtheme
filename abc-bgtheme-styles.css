@@ -94,15 +94,19 @@ figure.branding img {
 }
 
 figure.branding figcaption {
-  color:#002868;
+  display: none;
   font-size:1.375em;
   line-height: 1.15em;
   padding:0 0 20px;
   text-align: center;
   text-shadow: 2px 2px 40px #777;
 }
-
-
+figure.branding figcaption.blue {
+  color:#002868;
+}
+figure.branding figcaption.white {
+  color:#ffffff;
+}
 section.header-image figure.main-image {
 background-size: cover;
 background-position: 50% 33%;
@@ -274,7 +278,12 @@ article .at.ngp-form .content.thankYou button.btn-social {
   font-weight:600;
   margin:0 15px 0 0;
 }
-
+/* thanks */
+article .at.ngp-form .content.thankYou {
+    margin: 0 auto;
+    padding: 30px 20px 0;
+    width: 100%;
+}
 
 /* Progress Meter Stuff */
 article .at.ngp-form header.MeterHtml {
@@ -1711,8 +1720,12 @@ footer.theme-footer p {
   margin-top: 10px;
   padding: 20px;
 }
+#cloak .panel p {
+    margin: 0 0 10px 0;
+}
 #cloak .col-6 {
   float: left;
+  padding-right: 10px;
   width: 50%;
 }
 
@@ -1888,6 +1901,7 @@ footer.theme-footer p {
   display: none;
   }	
   figure.branding figcaption {
+    display: block;
     font-size:1.9em;
     padding-bottom:16px;
   }
