@@ -404,7 +404,6 @@ article .at.ngp-form fieldset.RecipientInformation + fieldset.ContactInformation
 article .at.ngp-form fieldset.ContactInformation + fieldset.PaymentInformation,
 article .at.ngp-form fieldset.PaymentInformation + fieldset.AdditionalInformation:not(.hide-additional-information) {margin-top:25px;}
 
-
 article .at.ngp-form .at-row.at-row-full.PremiumGift {
   margin-bottom: 25px;
 }
@@ -467,16 +466,53 @@ article .at.ngp-form .form-unit.form-unit-radio.form-item-premiumgift label {
   padding: 0;
 }
 
+article .at.ngp-form .at-fieldset.ShippingInformation .at-row {
+  margin:5px 0;
+}
 article .at.ngp-form .at-fieldset.ShippingInformation .at-shipping-destinations {
   align-content: center;display: flex;
 }
 article .at.ngp-form .at-fieldset.ShippingInformation .at-shipping-destinations label {
+  align-items: center;
+  border: 0;
+  border-radius: 0;
   display: flex;
-  justify-content: center;
+  float: none;
+  font-size: 18px;
   height: 44px;
   line-height: 44px !important;
   margin: 0;
+  min-width: 125px;
+  max-width: calc(50% - 5px);
+  padding: 0 0 0 35px;
+  position: relative;
+  text-decoration: none;
   width: 50%;
+}
+article .at.ngp-form .at-fieldset.ShippingInformation .at-shipping-destinations label:first-of-type {
+    padding: 0 20px 0 35px;
+}
+.at-fieldset.ShippingInformation .at-shipping-destinations input[type="radio"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  font-weight: 600;
+  font-size: 16px;
+  height: 24px;
+  left: 0;
+  margin-right: 0;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  position: absolute;
+  width: 24px;
+}
+.at-shipping-destinations input[type="radio"]:checked {
+    background-color: #DC6B2F;
+    border: 1px solid #DC6B2F;
 }
 
 article .at.ngp-form legend.at-legend {
@@ -614,7 +650,6 @@ article .at.ngp-form .form-item-selectedfrequency .radios label {
 
 article .at.ngp-form .form-item-selectedfrequency .radios label.selected {
   color:#DC6B2F;
-  font-weight:700;
 }
 /***
 article .at.ngp-form .form-item-selectedfrequency .radios label input[type="radio"] {
@@ -1086,7 +1121,6 @@ article .at.ngp-form .radios label {
   padding-right:10px;
 }
 
-
 article .at.ngp-form .form-item-inhonororinmemoryof .radios label label,
 article .at.ngp-form fieldset.ContactInformation .radios label,
 article .at.ngp-form fieldset.AdditionalInformation .radios label {
@@ -1152,24 +1186,34 @@ article .at.ngp-form fieldset.AdditionalInformation div.other-option label.at-te
 
 article .at.ngp-form .at-fields.interests-fields {margin:0;}
 
+fieldset.ContactInformation fieldset.at-fieldset.Interests {
+  padding: 0;
+}
+fieldset.ContactInformation fieldset.at-fieldset.Interests p {
+  margin: 5px 0 10px;
+}
 fieldset.ContactInformation  fieldset.at-fieldset.Interests.hideStep {
   display:block !important;
   height: auto;
   margin:0;
+  padding: 0 10px !important;
   position: relative;
   visibility: visible;
   z-index: 2;
 }
-fieldset.ContactInformation  fieldset.at-fieldset.Interests.hideStep,
+fieldset.ContactInformation  fieldset.at-fieldset.Interests.hideStep {
+   margin:0;   
+}
 fieldset.ContactInformation  fieldset.at-fieldset.Interests.hideStep .at-markup.InterestsHeaderHtml {
-   margin:0; 
+  margin: 0;
+  margin-top:10px;
 }
 fieldset.ContactInformation  fieldset.at-fieldset.Interests.hideStep .at-fields div > label {
   margin:5px 0;
 }
 
 article .at.ngp-form footer.FooterHtml {padding:10px 20px 0;}
-article .at.ngp-form.multistep-layout .at-form-submit footer.FooterHtml {padding:10px;}
+article .at.ngp-form.multistep-layout .at-form-submit footer.FooterHtml {margin-top: 10px;padding:10px;}
 
 article .at.ngp-form footer.FooterHtml p {
   font-size: 1.3em;
