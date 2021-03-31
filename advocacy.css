@@ -54,8 +54,12 @@ body.advocacy article .at.ngp-form .at-legend.clearfix.at-legend-with-submit inp
     margin: 0 -10px 20px -10px;
     width: 100%;
 }
+body.advocacy article .at.ngp-form .at-form-submit:after,
+body.advocacy article .at.ngp-form .at-form-submit:before {
+	display: none;
+}
 body.advocacy article .at.ngp-form .at-form-submit {
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 body.advocacy fieldset.AdvocacyFields .at-fields {
     background: #ECEBEB;
@@ -97,6 +101,18 @@ body.advocacy article .at.ngp-form .at-markup.Outro0 {
 @media (min-width:768px) {
 	body.advocacy main article section.article-content {
 	    padding: 20px 0 45px 0;
+	}
+	body.advocacy article .at.ngp-form figure.main-image {
+	    grid-row: 1 / 2;
+	}
+	body.advocacy .at.ngp-form header.MeterHtml {
+	    grid-row: 3 / 4;
+	}
+	body.columns-two .at.ngp-form header.MeterHtml {
+		grid-row: 4 / 5;
+	}
+	body.columns-two .at.ngp-form header.HeaderHtml {
+		grid-row: 5 / 6;
 	}
 }
 
