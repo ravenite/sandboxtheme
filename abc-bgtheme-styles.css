@@ -1221,7 +1221,20 @@ fieldset.ContactInformation fieldset.at-fieldset.Interests {
 fieldset.ContactInformation fieldset.at-fieldset.Interests p {
   margin: 5px 0 10px;
 }
-fieldset.ContactInformation  fieldset.at-fieldset.Interests.hideStep {
+fieldset.at-fieldset.ContributionInformation  fieldset.at-fieldset.Interests.hideStep {
+  display:block !important;
+  height: auto;
+  margin:0;
+  padding: 0 !important;
+  position: relative;
+  visibility: visible;
+  z-index: 2;
+}
+fieldset.ContributionInformation  fieldset.at-fieldset.Interests.hideStep > legend.at-legend {
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+fieldset.ContributionInformation  fieldset.at-fieldset.Interests.hideStep {
   display:block !important;
   height: auto;
   margin:0;

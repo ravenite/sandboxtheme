@@ -5,8 +5,6 @@ var myPostRender = function(vals) {
       $("body").addClass("contribution-theme");
       $("footer.theme-footer .footer-container.upper").prependTo("article .at.ngp-form section.at-inner footer.FooterHtml"); // Move footer-container upper if it is a contribution form
   }
-  //$('.ContributionInformation > legend.at-legend').text('Gift Information');
- 
 
   //hide the CTA lightbox
   $( "button.remove.block" ).click(function() {
@@ -44,7 +42,9 @@ var myPostRender = function(vals) {
   }
 
   // Move interests to second step
-  $("fieldset.at-fieldset.Interests").appendTo("fieldset.ContactInformation div.at-fields").removeClass("hideStep");
+  $("body.advocacy fieldset.Interests").appendTo("fieldset.ContributionInformation div.at-fields").removeClass("hideStep");
+  $("body.advocacy .Interests > legend.at-legend").text("Additional Information");
+
 
   // Move the main image down on header image themed forms
   $("body.bg.has-main-image .article-content > figure.main-image").prependTo("body.bg.has-main-image article section.at-inner"); 
@@ -60,6 +60,7 @@ var myPostRender = function(vals) {
       var recurringObject = nvtag.tags[0].formviews.current.subviews.ContributionInformation.subviews.IsRecurring.def;
       if (recurringObject.name === "IsRecurring" && recurringObject.type === "hidden" && recurringObject.value === true) {
           $("article .at.ngp-form .ContributionInformation").addClass("forced-recurring");
+            $('.ContributionInformation > legend.at-legend').text('Gift Information');
         } else {};
     } catch {}  
       // Add disclaimer
@@ -160,7 +161,7 @@ var myAlterFormDefinition = function(vals) {
       _.each(vals.form_definition.form_elements, function(child) { // iterate through each step
         name_index++;
         if (child.name === 'Interests') { // Find the "Interests" one, which is the fourth step if there's a fourth step
-          vals.form_definition.form_elements[(name_index - 1)].step = 2; // Set it to (human-readable) Step 3
+          vals.form_definition.form_elements[(name_index - 1)].step = 1; // Set it to (human-readable) Step 3
         }
       });
     }
