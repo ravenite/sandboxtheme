@@ -1,17 +1,16 @@
 * {box-sizing:border-box;}
-
 @font-face {
     font-family: 'HK Grotesk';
-    src: url('https://nvlupin.blob.core.windows.net/images/van/ABCON/ABCON/1/88500/images/SANDBOX/themes/fonts/HKGrotesk-Regular.woff2') format('woff2'),
-        url('https://nvlupin.blob.core.windows.net/images/van/ABCON/ABCON/1/88500/images/SANDBOX/themes/fonts/HKGrotesk-Regular.woff') format('woff');
+    src: url('https://nvlupin.blob.core.windows.net/images/van/ABCON/ABCON/1/88443/images/themes/fonts/HKGrotesk-Regular.woff2') format('woff2'),
+        url('https://nvlupin.blob.core.windows.net/images/van/ABCON/ABCON/1/88443/images/themes/fonts/HKGrotesk-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'HK Grotesk';
-    src: url('https://nvlupin.blob.core.windows.net/images/van/ABCON/ABCON/1/88500/images/SANDBOX/themes/fonts/HKGrotesk-SemiBold.woff2') format('woff2'),
-        url('https://nvlupin.blob.core.windows.net/images/van/ABCON/ABCON/1/88500/images/SANDBOX/themes/fonts/HKGrotesk-SemiBold.woff') format('woff');
+    src: url('https://nvlupin.blob.core.windows.net/images/van/ABCON/ABCON/1/88443/images/themes/fonts/HKGrotesk-SemiBold.woff2') format('woff2'),
+        url('https://nvlupin.blob.core.windows.net/images/van/ABCON/ABCON/1/88443/images/themes/fonts/HKGrotesk-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -55,6 +54,10 @@ button:hover {
 figure,
 figure img {
   max-width:100%;
+}
+b,strong, strong u, 
+.Subject {
+  font-weight: 600 !important;
 }
 
 /* Theme Header */
@@ -106,6 +109,7 @@ figure.branding figcaption.blue {
 }
 figure.branding figcaption.white {
   color:#ffffff;
+  text-shadow: 2px 2px 15px #424242;
 }
 section.header-image figure.main-image {
 background-size: cover;
@@ -281,7 +285,7 @@ article .at.ngp-form .content.thankYou button.btn-social {
 /* thanks */
 article .at.ngp-form .content.thankYou {
     margin: 0 auto;
-    padding: 30px 20px 0;
+    padding: 30px 30px 0;
     width: 100%;
 }
 
@@ -543,7 +547,7 @@ article .at.ngp-form fieldset.TicketInformation label {
   font-size:18px;
   font-weight:400;
   line-height:24px;
-  margin:0 10px;
+  margin:0 0 0 10px;
 }
 
 article .at.ngp-form .AdditionalInformation .at-row label {font-weight:600;}
@@ -677,14 +681,12 @@ article .at.ngp-form .form-item-selectedfrequency .radio-description {
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
-  height:0;
   margin: 0;
   padding: 0;
-  visibility: hidden;
   width: 100%;
 }
 article .at.ngp-form .form-item-selectedfrequency .radio-description-value-0 {
-  background-image:url(https://raw.githubusercontent.com/ravenite/sandboxtheme/01f71c03db45636d285c051b63f8c08610383a38/curved-up-arrow.svg);
+  background-image:url(https://nvlupin.blob.core.windows.net/images/van/ABCON/ABCON/1/88443/images/themes/curved-up-arrow.svg);
   height: auto;
   padding: 20px 0 10px 35px;
   visibility: visible;
@@ -743,18 +745,28 @@ article .at.ngp-form label.at-check.authorize-payment-label > span {
   text-transform:none;
 }
 
+
+article .at.ngp-form .full.at-row {
+  width: 100%;
+}
+
 article .at.ngp-form .donatesecurely {
   display: flex;
   font-weight: 500 !important;
   line-height: 20px;
   margin-top: 15px;
+  justify-content: flex-end;
 }
 article .at.ngp-form .donatesecurely::before {
   content: '\01F512';
 }
 article .at.ngp-form .donatesecurely span.text {
-  font-size: 16px;
+  font-size: 14px;
 }
+/****
+.at-markup.donatesecurely> label {
+    width: 155px;
+}****/
 article .at.ngp-form  .donatesecurely label > span {
   display:block;
   font-size:14px;
@@ -1026,16 +1038,19 @@ article .at.ngp-form fieldset.ContributionInformation label.label-otheramount in
   font-size: 22px;
   line-height: 29px;
 }
+
+article .at.ngp-form fieldset.ContributionInformation label.label-amount.label-otheramount.error {
+  height:auto;
+}
 article .at.ngp-form fieldset.ContributionInformation label.label-otheramount .error {
   color: #fa5252;
   display:block;
   font-size:14px;
   line-height:18px;
   margin:0;
-  padding:5px 0 0;
+  padding:15px 0 0;
   width:100%;
 }
-
 article .at.ngp-form fieldset.ContributionInformation label.label-amount a,
 article .at.ngp-form fieldset.ContributionInformation label.label-amount a:hover,
 article .at.ngp-form fieldset.ContributionInformation label.label-amount:hover a {
@@ -1670,7 +1685,7 @@ footer.theme-footer p {
 #cloak .modal {
   animation: fadein 1s;
   background-color: #f7f7f7;
-  height: 500px;
+  min-height: 500px;
   margin: 75px auto;
   max-width: 90%;
   padding:40px;
@@ -1723,11 +1738,7 @@ footer.theme-footer p {
 #cloak .panel p {
     margin: 0 0 10px 0;
 }
-#cloak .col-6 {
-  float: left;
-  padding-right: 10px;
-  width: 50%;
-}
+
 
 
 
@@ -1771,7 +1782,7 @@ footer.theme-footer p {
 
   article .at.ngp-form header.at-title,
   article .at.ngp-form .content.thankYou h1 {
-    font-size:1.2em;
+    font-size:1.1em;
     line-height: 1.23;
   }
   article .at.ngp-form .content.thankYou h1 {
@@ -1835,6 +1846,12 @@ footer.theme-footer p {
     margin:9px;
     flex-basis: calc(50% - 18px);
     width: calc(50% - 18px);
+  }
+  /* lightbox */
+  #cloak .col-6 {
+    float: left;
+    padding-right: 10px;
+    width: 50%;
   }
 }
 
@@ -1961,7 +1978,7 @@ footer.theme-footer p {
   }
   article .at.ngp-form header.at-title,
   article .at.ngp-form .content.thankYou h1 {
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 1.3;
   }
   body.columns-two .at.ngp-form header.at-title {
@@ -1980,9 +1997,10 @@ footer.theme-footer p {
   body.columns-two .at.ngp-form header.MeterHtml {
     grid-row: 3 / 4;
   }
+  /***
   body.columns-two .at.ngp-form header.HeaderHtml {
     grid-row: 4 / 5;
-  }
+  }***/
   body.columns-two .at.ngp-form form {
     grid-column: 2 / 3;
     grid-row: 1 / 7;
@@ -2073,7 +2091,7 @@ footer.theme-footer p {
   }
   article .at.ngp-form header.at-title,
   article .at.ngp-form .content.thankYou h1 {
-    font-size: 1.65em;
+    font-size: 1.4em;
     line-height: 1.23;
   }
 
@@ -2106,7 +2124,7 @@ footer.theme-footer p {
   header.theme-header section.logo-container {}
   article .at.ngp-form header.at-title,
   article .at.ngp-form .content.thankYou h1 {
-    font-size: 1.9em;
+    font-size: 1.7em;
   }
   /* CTA */
   .cta-section .row {

@@ -84,10 +84,10 @@ body.advocacy  .at-targets.clearfix {
 body.advocacy  article .at.ngp-form .at-row label textarea {
 	font-size:18px;
 	line-height: 1.75em;
-	padding: 20px 22px;
 }
 body.advocacy  .at-row.at-row-full.Message0 label textarea {
 	margin-top: 15px;
+	padding: 20px 22px;
 }
 body.advocacy article .at.ngp-form .at-form-submit .at-submit {
 	margin:0;
@@ -134,9 +134,10 @@ body.advocacy article .at.ngp-form .at-markup.Outro0 {
 	body.advocacy .at.ngp-form header.MeterHtml {
 		grid-row: 3 / 4;
 	}
+	/***
 	body.advocacy .at.ngp-form header.HeaderHtml {
 		grid-row: 4 / 5;
-	}
+	}***/
 	body.advocacy article .at.ngp-form ol.at-steps {
 		margin: 20px 10px 0 10px;
 		padding: 0 10px;

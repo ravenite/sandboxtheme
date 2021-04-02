@@ -63,7 +63,7 @@ var myPostRender = function(vals) {
         } else {};
     } catch {}  
       // Add disclaimer
-      $('<div class="at-row"><div class="at-markup donatesecurely"><label style="display:inline;"><span><span class="text">Your Donation will be securely processed.</span></span></label></div></div>').appendTo('fieldset.PaymentInformation .at-fields');
+      $('<div class="at-row full"><div class="at-markup donatesecurely"><label style="display:inline;"><span><span class="text">Your Donation will be securely processed.</span></span></label></div></div>').insertAfter('.at.ngp-form .step-prevNext');
 
       // Check to see if an Ecard exists. If it does, move it around per the design      
       if ( $("article .at.ngp-form fieldset.RecipientInformation .at-row.Ecard").length ) {
@@ -99,7 +99,7 @@ var myPostRender = function(vals) {
     $(".at.ngp-form .form-item-selectedfrequency .radios label.selected").closest("label").removeClass("selected");
     $(this).closest("label").addClass("selected");
     isOtherAmount = "false"; // unset this value if the toggle changes; it'll otherwise cause complications with the calculation
-    getCurrentAmount();
+    //getCurrentAmount();
     });
     // giving this Select treament to Gifts as well
     $( ".at.ngp-form .at-gift input" ).toggle(
