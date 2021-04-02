@@ -5,7 +5,7 @@ var myPostRender = function(vals) {
       $("body").addClass("contribution-theme");
       $("footer.theme-footer .footer-container.upper").prependTo("article .at.ngp-form section.at-inner footer.FooterHtml"); // Move footer-container upper if it is a contribution form
   }
-  $('.ContributionInformation > legend.at-legend').text('Gift Information');
+  //$('.ContributionInformation > legend.at-legend').text('Gift Information');
  
 
   //hide the CTA lightbox
