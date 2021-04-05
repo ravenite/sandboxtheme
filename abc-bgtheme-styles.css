@@ -553,7 +553,7 @@ article .at.ngp-form legend.at-legend {
 
 article .at.ngp-form fieldset.AdditionalInformation > legend {display:none;}
 
-article .at.ngp-form fieldset.ContributionInformation legend.at-legend {display: block !important;padding-bottom:0;}
+article .at.ngp-form fieldset.ContributionInformation legend.at-legend {padding-bottom:0;}
 
 article .at.ngp-form .at-row label,
 article .at.ngp-form fieldset.TicketInformation label {
@@ -2151,7 +2151,7 @@ footer.theme-footer p {
 
   article .at.ngp-form header.at-title,
   article .at.ngp-form .content.thankYou h1 {
-    font-size: 1.7em;
+    font-size: 1.45em;
   }
   /* CTA */
   .cta-section .row {
