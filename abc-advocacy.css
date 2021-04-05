@@ -96,6 +96,26 @@ body.advocacy article .at.ngp-form .at-markup.Outro0 {
     margin-bottom: 10px;
 }
 
+
+body.advocacy .at-select-target {
+    display: block;
+    float: none !important;
+}
+
+body.advocacy .at-select-target > span {
+	line-height: 45px;
+}
+body.advocacy  .ExtraInformation  .at-select-target > * {
+    display: block;
+}
+body.advocacy .at-select-target > b {
+    clear:both;
+    display: block;
+    float: none;
+    width: 100%;
+}
+
+
 @media (max-width:767px) {
 	body.advocacy article .at.ngp-form ol.at-steps {
 	    margin: 0;
