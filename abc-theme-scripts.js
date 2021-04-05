@@ -60,7 +60,7 @@ var myPostRender = function(vals) {
       var recurringObject = nvtag.tags[0].formviews.current.subviews.ContributionInformation.subviews.IsRecurring.def;
       if (recurringObject.name === "IsRecurring" && recurringObject.type === "hidden" && recurringObject.value === true) {
           $("article .at.ngp-form .ContributionInformation").addClass("forced-recurring");
-            $('.ContributionInformation > legend.at-legend').text('Gift Information');
+            //$('.ContributionInformation > legend.at-legend').text('Gift Information');
         } else {};
     } catch {}  
       // Add disclaimer
