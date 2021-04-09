@@ -123,12 +123,11 @@ body.advocacy .at-select-target > b {
 	body.advocacy .at-fieldset.AdvocacyFields {
 	    padding: 0 !important;
 	}
-	body.advocacy section.at-inner figure.main-image {
-		display: block !important;
-	}
-
-	html body.advocacy section.at-inner figure.main-image:first-of-type {
+	body.advocacy section.at-inner figure.main-image:first-of-type {
 	    display: none !important;
+	}
+	body.advocacy.image-mobile-show section.at-inner figure.main-image {
+		display: block !important;
 	}
 
 }

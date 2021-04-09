@@ -1270,6 +1270,11 @@ fieldset.ContactInformation  fieldset.at-fieldset.Interests.hideStep .at-fields 
 article .at.ngp-form footer.FooterHtml {padding:10px 20px 0;}
 article .at.ngp-form.multistep-layout .at-form-submit footer.FooterHtml {margin-top: 10px;padding:10px;}
 
+body.contribution-theme article .at.ngp-form.multistep-layout .at-form-submit footer.FooterHtml > .footer-container.upper {
+  margin-bottom: 10px;
+}
+
+
 article .at.ngp-form footer.FooterHtml p {
   font-size: 1.3em;
   line-height:20px;
@@ -1280,6 +1285,12 @@ article footer.FooterHtml .footer-container.upper p {
     text-align: center;
 }
 article .at.ngp-form footer.FooterHtml p:last-child {margin:0;}
+
+article .at.ngp-form  footer.FooterHtml > p {
+  font-size: 14px;
+  line-height:20px;
+  margin: 10px 0 0 0;
+}
 
 article section.article-content > .validation-logos {display:none;}
 
@@ -2024,10 +2035,10 @@ footer.theme-footer p {
   body.columns-two .at.ngp-form header.MeterHtml {
     grid-row: 3 / 4;
   }
-  /***
-  body.columns-two .at.ngp-form header.HeaderHtml {
+  body.columns-two .at.ngp-form header.HeaderHtml,
+  body.bg.has-main-image.columns-two .at.ngp-form header.HeaderHtml {
     grid-row: 4 / 5;
-  }***/
+  }
   body.columns-two .at.ngp-form form {
     grid-column: 2 / 3;
     grid-row: 1 / 7;
