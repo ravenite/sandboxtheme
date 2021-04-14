@@ -1860,6 +1860,43 @@ footer.theme-footer p {
 }
 
 
+
+/* Self Service Porta; */
+.oa-self-service-login-container.oa-hooked {
+  padding:20px;
+}
+
+.oa-self-service-login-container.oa-input-unit .btn-at:not(:disabled) {
+  align-items: center;
+  background-color: #DC6B2F;
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+  display: flex;
+  float: none;
+  font-size: 22px;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 24px;
+  margin: 0 10px;
+  min-height: 50px;
+  order: 2;
+  padding: 6px 30px;
+  text-align: center;
+  white-space: normal;
+}
+.oa-self-service-login-container label input {
+  border: 1px solid #999;
+  border-radius: 0;
+  font-weight: 600;
+  font-size: 16px;
+  height: 44px;
+  line-height: 44px;
+  margin: 5px 0 15px;
+  padding: 7px 10px;
+}
+
+
 @media (min-width:600px) {
   
   /* Theme Header */
@@ -2019,10 +2056,6 @@ footer.theme-footer p {
   article .at.ngp-form header.at-title,
   article .at.ngp-form .content.thankYou h1 {}
 
-
-  body.columns-two .at.ngp-form header.at-title {
-    grid-row: 1 / 2;
-  }
   body.has-main-image  article .at.ngp-form figure.main-image {
     display: block;
   }
@@ -2032,13 +2065,17 @@ footer.theme-footer p {
   body.columns-two article .at.ngp-form figure.main-image {
     margin: 0 0 20px;
   }
+ /**
+  body.columns-two .at.ngp-form header.at-title {
+    grid-row: 1 / 2;
+  }
   body.columns-two .at.ngp-form header.MeterHtml {
     grid-row: 3 / 4;
   }
   body.columns-two .at.ngp-form header.HeaderHtml,
   body.bg.has-main-image.columns-two .at.ngp-form header.HeaderHtml {
     grid-row: 4 / 5;
-  }
+  }**/
   body.columns-two .at.ngp-form form {
     grid-column: 2 / 3;
     grid-row: 1 / 7;
