@@ -440,6 +440,25 @@ article .at.ngp-form fieldset.Premiums .at-gift {
   padding: 0;
   position: relative;
 }
+/** input focus **/≈
+main article section.article-content .at input[type="text"]:focus
+main article section.article-content .at input[type="password"]:focus,
+main article section.article-content .at input[type="date"]:focus,
+main article section.article-content .at input[type="datetime"]:focus,
+main article section.article-content .at input[type="datetime-local"]:focus,
+main article section.article-content .at input[type="month"]:focus,
+main article section.article-content .at input[type="week"]:focus,
+main article section.article-content .at input[type="email"]:focus,
+main article section.article-content .at input[type="number"]:focus,
+main article section.article-content .at input[type="search"]:focus,
+main article section.article-content .at input[type="tel"]:focus,
+main article section.article-content .at input[type="time"]:focus,
+main article section.article-content .at input[type="url"]:focus,
+main article section.article-content .at input[type="color"]:focus,
+main article section.article-content .at textarea:focus {
+box-shadow: 0 0 3px #DC6B2F;
+}
+
 article .at.ngp-form .at-gift input[type="radio"] {
   -moz-appearance: none;
   -webkit-appearance: none;
