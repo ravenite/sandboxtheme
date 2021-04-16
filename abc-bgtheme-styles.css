@@ -69,8 +69,6 @@ main header.theme-header {
   margin:0;
   width:100%;
 }
-
-
 header.theme-header .logo-container {
   margin:0 auto;
   padding: 0 20px;
@@ -136,6 +134,40 @@ main article section.article-content {
 .at.ngp-form header.HeaderHtml {
 	padding:0 20px;
 }
+
+/* Pages */
+.page-content.at * {
+  font-family: 'HK Grotesk';
+  src: url('HKGrotesk-Regular.woff2') format('woff2'), url('HKGrotesk-Regular.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+}
+.page-content.at {
+  padding:0 20px;
+}
+.page-content.at h1 {
+  color:#473E36;
+  font-size: 1.4em;
+  line-height: 1.25;
+  margin: 0 0 15px;
+  padding: 0;
+  text-align: left;
+}
+.page-content.at h2 {
+  color:#473E36;
+  font-size:20px;
+  font-weight:700;
+  margin:0 0 15px;
+}
+.page-content.at  p {
+  color: #3c3c3c;
+  font-size: 18px;
+  line-height: 1.5em;
+  margin: 0 0 15px;
+  padding: 0;
+}
+
+
 /* FastAction */
 
 article .at.ngp-form .FastAction {
@@ -1878,11 +1910,17 @@ footer.theme-footer p {
   
 }
 
-
-
-/* Self Service Porta; */
+/* Self Service Portal */
+.oa-self-service-portal-container .ssp-header,
+.oa-self-service-portal-container .logout-link {
+  padding: 0 20px;
+}
+.oa-self-service-portal-container .oa-ssp-app-container {
+  padding-top: 0;
+}
+.oa-self-service-confirmation-container,
 .oa-self-service-login-container.oa-hooked {
-  padding:20px;
+  padding:10px 0;
 }
 .oa-self-service-login-container label input,
 .oa-self-service-login-container.oa-hooked label input {
@@ -1907,7 +1945,7 @@ footer.theme-footer p {
   font-weight: 700;
   justify-content: center;
   line-height: 24px;
-  margin: 0 10px;
+  margin: 0 8px 0 10px !important;
   min-height: 50px;
   order: 2;
   padding: 6px 30px;
