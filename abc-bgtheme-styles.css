@@ -1833,7 +1833,55 @@ footer.theme-footer p {
 }
 
 
+/* Self Service Portal */
+.oa-self-service-portal-container .ssp-header,
+.oa-self-service-portal-container .logout-link {
+  padding: 0 10px;
+}
+.oa-self-service-portal-container .oa-ssp-app-container {
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.oa-self-service-confirmation-container,
+.oa-self-service-login-container.oa-hooked {
+  padding:10px 0;
+}
 
+.oa-ssp-app-container .card .card-panel .card-button-content .card-button {
+  border-radius: 0;
+}
+
+.oa-self-service-login-container label input,
+.oa-self-service-login-container.oa-hooked label input {
+  border: 1px solid #999;
+  border-radius: 0;
+  font-weight: 600;
+  font-size: 16px;
+  height: 44px;
+  line-height: 44px;
+  margin: 5px 0 15px;
+  padding: 7px 10px;
+}
+.oa-self-service-login-container input#LoginSubmit {
+  align-items: center;
+  background-color: #DC6B2F;
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+  display: flex;
+  float: none;
+  font-size: 22px;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 24px;
+  margin: 0 8px 0 10px !important;
+  min-height: 50px;
+  order: 2;
+  padding: 6px 30px;
+  text-align: center;
+  white-space: normal;
+}
 
 
 @media (min-width:400px) {
@@ -1908,49 +1956,6 @@ footer.theme-footer p {
     width: unset;
   }
   
-}
-
-/* Self Service Portal */
-.oa-self-service-portal-container .ssp-header,
-.oa-self-service-portal-container .logout-link {
-  padding: 0 20px;
-}
-.oa-self-service-portal-container .oa-ssp-app-container {
-  padding-top: 0;
-}
-.oa-self-service-confirmation-container,
-.oa-self-service-login-container.oa-hooked {
-  padding:10px 0;
-}
-.oa-self-service-login-container label input,
-.oa-self-service-login-container.oa-hooked label input {
-  border: 1px solid #999;
-  border-radius: 0;
-  font-weight: 600;
-  font-size: 16px;
-  height: 44px;
-  line-height: 44px;
-  margin: 5px 0 15px;
-  padding: 7px 10px;
-}
-.oa-self-service-login-container input#LoginSubmit {
-  align-items: center;
-  background-color: #DC6B2F;
-  border: 0;
-  border-radius: 0;
-  color: #fff;
-  display: flex;
-  float: none;
-  font-size: 22px;
-  font-weight: 700;
-  justify-content: center;
-  line-height: 24px;
-  margin: 0 8px 0 10px !important;
-  min-height: 50px;
-  order: 2;
-  padding: 6px 30px;
-  text-align: center;
-  white-space: normal;
 }
 
 @media (min-width:600px) {

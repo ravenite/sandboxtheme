@@ -150,10 +150,10 @@ body.advocacy .at-select-target > b {
 	body.advocacy article .at.ngp-form figure.main-image {
 	    grid-row: 1 / 2;
 	}
+	/***
 	body.advocacy .at.ngp-form header.MeterHtml {
 		grid-row: 3 / 4;
 	}
-	/***
 	body.advocacy .at.ngp-form header.HeaderHtml {
 		grid-row: 4 / 5;
 	}***/
