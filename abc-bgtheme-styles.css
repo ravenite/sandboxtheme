@@ -481,6 +481,7 @@ main article section.article-content .at input[type="datetime-local"]:focus,
 main article section.article-content .at input[type="month"]:focus,
 main article section.article-content .at input[type="week"]:focus,
 main article section.article-content .at input[type="email"]:focus,
+main article section.article-content .at input.edit-otheramount.orange,
 main article section.article-content .at input[type="number"]:focus,
 main article section.article-content .at input[type="search"]:focus,
 main article section.article-content .at input[type="tel"]:focus,
@@ -1108,6 +1109,10 @@ article .at.ngp-form fieldset.ContributionInformation label.label-otheramount in
   line-height: 29px;
 }
 
+article .at form .label-amount input:required + .label-otheramount-prefix,
+article .at.ngp-form .label-amount input + .label-otheramount-prefix {
+    color: #ced4da !important;
+}
 article .at.ngp-form fieldset.ContributionInformation label.label-amount.label-otheramount.error {
   height:auto;
 }

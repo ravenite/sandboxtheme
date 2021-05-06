@@ -16,6 +16,13 @@ var myPostRender = function(vals) {
     console.log("open");
   });
 
+  // if the amount has been populated via querystring, add this class to add orange box shadow
+  if (document.location.href.search("am=")!=-1){
+    $(".edit-otheramount").addClass("orange");
+  } else {
+
+  }
+
     // Enable the "Read More" option if it's chosen in the Theme
     if ($('body.form-layout-read_more').length) {
     console.log("Read more!");
