@@ -19,9 +19,15 @@ var myPostRender = function(vals) {
   // if the amount has been populated via querystring, add this class to add orange box shadow
   if (document.location.href.search("am=")!=-1){
     $(".edit-otheramount").addClass("orange");
-  } else {
-
   }
+  // remove this orange box shadow class when another input is selected
+  $('.at-radios  input').click(function() {
+    $('.edit-otheramount.orange').removeClass('orange');
+  });
+
+
+
+
 
     // Enable the "Read More" option if it's chosen in the Theme
     if ($('body.form-layout-read_more').length) {

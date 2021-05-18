@@ -15,7 +15,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 /* Body */
 
 body {
@@ -136,7 +135,7 @@ main article section.article-content {
 }
 
 /* Pages */
-.page-content.at * {
+.page-content.at {
   font-family: 'HK Grotesk';
   src: url('HKGrotesk-Regular.woff2') format('woff2'), url('HKGrotesk-Regular.woff') format('woff');
   font-style: normal;
@@ -2282,4 +2281,10 @@ footer.theme-footer p {
   body.columns-two .at.ngp-form header.at-markup,
   body.columns-two .at.ngp-form header.MeterHtml,
   body.columns-two .at.ngp-form header.HeaderHtml {}
+}
+
+
+
+html main {
+overflow-anchor: none;
 }
