@@ -1,3 +1,25 @@
+/* jquery without postrender callback
+actiontag is not used in SSP so AT callbacks dont fire
+https://ngpvan.atlassian.net/wiki/spaces/OAPE/pages/405733999/OA+Pages+Javascript+Libraries+including+Embed.js
+*/
+(function ($) {
+ 
+  function postRender() {
+    $( "button.remove.block" ).click(function() {
+      $('#cloak').hide();
+    });
+    //show the CTA lightbox
+    $( "a.open.modal" ).click(function() {
+      $('#cloak').show();
+      console.log("open");
+    });
+  }
+  document.addEventListener('oaPages.postRender', postRender);
+  document.addEventListener('oaPages.asyncRefresh', postRender);
+  window.$(document).ready(postRender);
+ 
+}(jQuery));
+
 /* PostRender */
 var myPostRender = function(vals) {
   (function ($) {
